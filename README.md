@@ -1,4 +1,12 @@
-##Create a Searchable Table With a Google Spreadsheet
+## Prep for Portfolio
+
+https://github.com/scottpham/tabletop-to-datatables/tree/gh-pages
+
+http://dazzagreenwood.github.io/Portfolio
+
+
+
+## Create a Searchable Table With a Google Spreadsheet
 
 This repo creates bootstrap-styled searchable, sortable, responsive tables using the very cool [Tabletop.js](https://github.com/jsoma/tabletop) and the [datatables jquery plugin](http://datatables.net/). 
 
