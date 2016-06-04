@@ -12,18 +12,23 @@ http://dazzagreenwood.github.io/Portfolio/FilterElastic
 
 http://dazzagreenwood.github.io/Portfolio/slide-panel
 
-<<<<<<< HEAD
-http://dazzagreenwood.github.io/slider-master/deep-minified.html
+http://dazzagreenwood.github.io/Portfolio/slider-master/deep-minified.html
 
-http://dazzagreenwood.github.io/slider-master/with-jquery.html
+http://dazzagreenwood.github.io/Portfolio/slider-master/with-jquery.html
 
+http://dazzagreenwood.github.io/Portfolio/TOC/demo.html
 
-http://dazzagreenwood.github.io/TOC/demo.html
-=======
+http://dazzagreenwood.github.io/Portfolio/slider-master
+
+http://dazzagreenwood.github.io/Portfolio/Prioritize
+
+http://dazzagreenwood.github.io/Portfolio/second-nav
+
+http://dazzagreenwood.github.io/Portfolio/TimePole
+
 http://dazzagreenwood.github.io/Portfolio/slider-master
 
 http://dazzagreenwood.github.io/Portfolio/TOC
->>>>>>> origin/gh-pages
 
 http://dazzagreenwood.github.io/Portfolio/Prioritize
 
@@ -37,6 +42,17 @@ http://dazzagreenwood.github.io/Portfolio/header-opens
 
 http://dazzagreenwood.github.io/Portfolio/csv-to-html
 
+http://dazzagreenwood.github.io/Portfolio/happy-grid/demo_responsive.html
+
+http://dazzagreenwood.github.io/Portfolio/header-opens
+
+http://dazzagreenwood.github.io/Portfolio/csv-to-html
+
+http://dazzagreenwood.github.io/Portfolio/pop-card-fun
+
+http://dazzagreenwood.github.io/Portfolio/amazing-faq-template
+
+http://dazzagreenwood.github.io/Portfolio/interact-time/demo-future/timeliner-future.html
 
 http://dazzagreenwood.github.io/Portfolio/pop-card-fun
 
