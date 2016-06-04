@@ -12,21 +12,21 @@ http://dazzagreenwood.github.io/Portfolio/FilterElastic
 
 http://dazzagreenwood.github.io/Portfolio/slide-panel
 
-http://dazzagreenwood.github.io/Portfolio/slider-master/deep-minified.html
+http://dazzagreenwood.github.io/Portfolio/BLT-master/deep-minified.html
 
-http://dazzagreenwood.github.io/Portfolio/slider-master/with-jquery.html
+http://dazzagreenwood.github.io/Portfolio/BLT-master/with-jquery.html
+
+http://dazzagreenwood.github.io/Portfolio/BLT-master/no-jquery.html
+
+http://dazzagreenwood.github.io/Portfolio/BLT-master
 
 http://dazzagreenwood.github.io/Portfolio/TOC/demo.html
-
-http://dazzagreenwood.github.io/Portfolio/slider-master
 
 http://dazzagreenwood.github.io/Portfolio/Prioritize
 
 http://dazzagreenwood.github.io/Portfolio/second-nav
 
 http://dazzagreenwood.github.io/Portfolio/TimePole
-
-http://dazzagreenwood.github.io/Portfolio/slider-master
 
 http://dazzagreenwood.github.io/Portfolio/TOC
 
