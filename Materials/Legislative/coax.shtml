@@ -1,0 +1,351 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>LegalXML - Events</title>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="coax_files/style.css" type="text/css"></head><body leftmargin="0" topmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0" text="#000000">
+<a name="top"></a>
+<table summary="" border="0" cellpadding="0" cellspacing="0" height="10" width="100%">
+<tbody><tr align="left" bgcolor="#bda5bb" valign="bottom"> 
+<td colspan="2"> <img src="coax_files/legal_newheader2004.gif" usemap="#Map" valign="bottom" alt="Legal XML.org" title="Legal XML.org" align="left" border="0" height="69" width="723"><map name="Map"><area shape="rect" coords="6,13,170,64" href="http://www.oasis-open.org/" alt="http://www.oasis-open.org" title="http://www.oasis-open.org"><area shape="rect" coords="226,17,482,63" href="http://www.legalxml.org/" alt="http://www.legalxml.org" title="http://www.legalxml.org"></map> 
+</td>
+</tr>
+<tr bgcolor="#ffcc35" valign="top"> 
+<td colspan="2"> 
+<table summary="" border="0" cellpadding="0" cellspacing="0" height="13">
+<tbody><tr align="center" valign="middle"> 
+<td width="132">&nbsp;</td>
+<td valign="center" width="46"><a href="http://www.legalxml.org/about/index.shtml"><img src="coax_files/global_about6.gif" alt="About LegalXML" title="About LegalXML" border="0" height="13" width="46"></a></td>
+<td valign="center" width="71"><a href="http://www.legalxml.org/members/index.shtml"><img src="coax_files/global_members6.gif" alt="Members" title="Members" border="0" height="13" width="71"></a></td>
+<td valign="center" width="54"><a href="http://www.oasis-open.org/join/"><img src="coax_files/global_join6.gif" alt="Join LegalXML" title="Join LegalXML" border="0" height="13" width="54"></a></td>
+<td valign="center" width="59"><a href="http://www.legalxml.org/news/index.shtml"><img src="coax_files/global_news6.gif" alt="News" title="News" border="0" height="13" width="59"></a></td>
+<td width="56"><a href="http://www.legalxml.org/events/index.shtml"><img src="coax_files/global_events6.gif" alt="Events" title="Events" border="0" height="13" width="56"></a></td>
+<td valign="center" width="88"><a href="http://www.oasis-open.org/members/"><img src="coax_files/global_members_only6.gif" alt="Members Only" title="Members Only" border="0" height="13" width="88"></a></td>
+<td valign="center" width="84"><a href="http://xml.coverpages.org/"><img src="coax_files/global_coverpages6.gif" alt="www.xml.coverpages.org" title="www.xml.coverpages.org" border="0" height="13" width="84"></a></td>
+<td align="left" valign="center" width="56"><a href="http://www.xml.org/"><img src="coax_files/global_xmlorg6.gif" alt="www.xml.org" title="www.xml.org" border="0" height="13" width="56"></a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+<table summary="" border="0" cellpadding="0" cellspacing="0" height="96%" width="700">
+<tbody><tr valign="top">
+<td bgcolor="#3c1a57" width="131">
+<!-- begin left nav table -->
+<table summary="" border="0" cellpadding="0" cellspacing="0" width="131">
+  <tbody><tr>
+    <td colspan="3">
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="8" width="5">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="5" width="5">
+    </td>
+    <td bgcolor="#3c1a57">
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="5" width="1">
+    </td>
+    <td valign="bottom">
+      <img src="coax_files/ln_006.gif" alt="OASIS LegalXML Member Section" title="OASIS LegalXML Member Section" height="25" width="106">
+      <br>
+      <img src="coax_files/ln_002.gif" alt="OASIS Legal XML Member Section" title="OASIS LegalXML Member Section" height="25" width="106">
+      <br>
+      <a href="http://www.legalxml.org/about/index.shtml" class="leftnav">About</a>
+      <br>
+      <a href="http://www.oasis-open.org/join/" class="leftnav">Join</a>
+      <br>
+      <a href="http://www.legalxml.org/governance/" class="leftnav">Governance</a>
+      <br>
+      <a style="margin-left: 0.8em; display: block;" href="http://www.legalxml.org/governance/rules_of_procedures.shtml" class="leftnav">Rules of Procedure</a>
+      <a href="http://www.legalxml.org/members/index.shtml" class="leftnav">Members</a>
+      <br>
+      <br>
+      <img src="coax_files/ln_004.gif" alt="Resources" title="Resources" height="25" width="106">
+      <br>
+      <a href="http://www.legalxml.org/images/pdf/OASIS_LegalXML_brochure.pdf" class="leftnav">Brochure</a>
+      <br>
+      <a href="http://www.legalxml.org/legacy/index.shtml" class="leftnav">Legacy/Transition Documents</a>
+      <br>
+      <br>
+      <img src="coax_files/ln_007.gif" alt="Technical Process" title="Technical Process" height="25" width="106">
+      <br>
+      <a href="http://www.oasis-open.org/who/intellectualproperty.shtml" class="leftnav">IPR Policy</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/guidelines.shtml" class="leftnav">TC Guidelines</a>
+      <br>
+      <br>
+      <img src="coax_files/ln_003.gif" alt="Technical Committees" title="Technical Committees" height="25" width="106">
+      <br>
+      <a href="http://www.oasis-open.org/committees/committees.shtml" class="leftnav">Current TC List</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-courtfiling/" class="leftnav">LegalXML Court Filing</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-econtracts/" class="leftnav">LegalXML eContracts</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-enotary/" class="leftnav">LegalXML eNotary</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-intjustice/" class="leftnav">LegalXML IntJustice</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-intercept/" class="leftnav">LegalXML Lawful Intercept</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-legislative/" class="leftnav">LegalXML Legislative</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-odr/" class="leftnav">LegalXML ODR</a>
+      <br>
+      <a href="http://www.oasis-open.org/committees/legalxml-transcripts/" class="leftnav">LegalXML Transcripts</a>
+      <br>
+      <br>
+      <img src="coax_files/ln.gif" alt="OASIS Network" title="OASIS Network" height="25" width="106">
+      <br>
+      <a href="http://www.oasis-open.org/" class="leftnav">OASIS</a>
+      <br>
+      <a href="http://www.cgmopen.org/" class="leftnav">CGM Open</a>
+      <br>
+      <a href="http://www.oasis-cosl.org/" class="leftnav">COSL</a>
+      <br>
+      <a href="http://www.oasis-egov.org/" class="leftnav">eGov</a>
+      <br>
+      <a href="http://www.oasis-emergency.org/" class="leftnav">Emergency</a>
+      <br>
+      <a href="http://www.oasis-idtrust.org/" class="leftnav">IDtrust</a>
+      <br>
+      <a href="http://www.oasis-opencsa.org/" class="leftnav">Open CSA</a>
+      <br>
+      <a href="http://www.oasis-telecom.org/" class="leftnav">Telecom</a>
+      <br>
+      <br>
+      <img src="coax_files/ln_005.gif" alt="OASIS Info Channels" title="OASIS Info Channels" height="25" width="106">
+      <br>
+      <a href="http://xml.coverpages.org/" class="leftnav">Cover Pages</a>
+      <br>
+      <a href="http://www.xml.org/" class="leftnav">XML.org</a>
+      <br>
+      <a href="http://www.oasis-open.org/sponsoring.shtml" class="leftnav">Sponsorship</a>
+      <br>
+      <br>
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="5" width="5">
+      <br>
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="5" width="1">
+      <br>
+      <img src="coax_files/spacer.gif" alt=" " title=" " height="10" width="5">
+      <br>
+    </td>
+  </tr>
+</tbody></table>
+<!-- end left nav table --></td>
+<td width="17"><p><img src="coax_files/spacer.gif" alt=" " title=" " height="5" width="15"></p></td>
+<td rowspan="2" align="right" valign="top" width="628">
+<table summary="" border="0" cellpadding="0" cellspacing="0" width="554">
+<tbody><tr valign="top">
+<td>&nbsp;</td>
+</tr>
+<tr valign="top">
+<td>
+<table summary="" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="right"><span class="littletext">&nbsp;</span></td>
+</tr>
+</tbody></table>
+<table summary="" border="0" cellpadding="0" cellspacing="3" width="554">
+<tbody><tr valign="middle">
+<td align="left" bgcolor="#3c1a57" height="20"><span class="headingtext">&nbsp;LegalXML EVENTS</span></td>
+</tr>
+<tr valign="top">
+<td height="2">
+<table summary="" border="0" cellpadding="7" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="introtext" align="left" bgcolor="#ffedb7" valign="top">
+<p><b>COAX: &nbsp; Conference on Congressional Organizations' Application of XML</b></p>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table summary="" border="0" cellpadding="7" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="text" align="left">
+<!-- begin body text -->
+<p><b>COAX: &nbsp; Conference on Congressional Organizations' Application of XML</b></p>
+<p>LegalXML and the U.S. House of Representatives Committee on House
+Administration will host a one-day conference highlighting current XML
+and XML-related initiatives of the legislative branch on April 24,
+2001. The purpose of the conference is to discuss the current use of
+XML by the legislative branch and the advantages of using of open and
+standard XML.</p>
+<p>Congressional organizations, federal agencies, private sector, and
+non-profit organizations will participate in the conference. The
+conference will have three panels.</p>
+<p><u>Panel One: Legislative Branch Current Use of XML</u></p>
+<p>The first panel will consist of the various stakeholders discussing
+current XML initiatives. Panel participants may include include
+representatives from the Library of Congress's Congressional Research
+Service and the Law Library (GLIN), the Clerk of the House, the
+Government Printing Office, Office of Legislative Counsel, the Senate,
+and the House Information Resources. A web site has been set up to
+highlight the activities of the COAX conference and the initiatives
+currently underway in each of the stakeholder organizations.</p>
+<p><u>Panel Two: Summary of XML Tools and Value Added Republication using XML</u></p>
+<p>The second panel will include two panelists who will summarize the
+current state of XML tools, capabilities and major development efforts.
+The first panelist will describe the current tools available for
+creating and using XML, document management tools and XML specific
+coding tools. The second panelist will discuss the current uses of XML
+by companies that provide value to government information. The
+summaries will be followed by question and answer periods. Stakeholders
+may choose to direct questions to vendor representatives.</p>
+<p><u>Panel Three: Importance of communications and open standards</u></p>
+<p>The third panel will include panelists that describe the advantages
+of using open, industry wide XML standards. The panelists may include
+representatives from XML.org/OASIS, World Wide Web Consortium (W3C),
+LegalXML, a state government (Ohio), federal agencies (XML.gov) and a
+non-profit group advocating the use of XML documents to better serve
+the public. The panelists will concentrate on the current XML standards
+such as citations, UDDI, GLIN, SOAP, and EbXML.</p>
+<p>Vendors interested in having their products mentioned in the second
+panel should provide information to the panelists through Daniel
+Bennett. The information provided should briefly describe XML
+supporting products, capabilities and major XML related development
+efforts. The panelists will summarize the information and present an
+overview for the stakeholders. Vendor information to be included in the
+second panel summary should be directed to Daniel Bennett no later than
+March 30, 2001.</p>
+<p>Participating vendors may provide links to their corporate or
+product web sites to Daniel Bennett at the e-mail address listed below.
+These links will be available on the COAX conference web site. Vendors
+sponsoring conference activities will have a special link area on the
+conference web site indicating their sponsorship.</p>
+<p>Participating vendors may provide product descriptions and contact
+information to the conference attendees. The information will be
+organized by the hosts on a vendor table. All distributed information
+must be provided through the hosting organizations, no other handouts
+will be permitted at the conference.</p>
+<p>No panelists will be using audiovisual presentations (e.g. Powerpoints).</p>
+<p>Panelists may be providing materials electronically for inclusion on
+the web site and distributing handouts (paper and/or CDROM's) at the
+conference.</p>
+<p>Attendance is limited to 80 people, seating must be requested
+through Daniel Bennett. Due to the desire to accommodate as many
+requests as possible, organizations may be limited as to the number of
+participants.</p>
+<p>There will be a vendor-sponsored buffet style lunch and breakfast.
+Sponsoring vendors will be introduced prior to introduction of the
+luncheon speaker. Vendors interested in sponsoring some portion of the
+event should contact Gary Poindexter.</p>
+<p>This is the first LegalXML conference focusing on XML initiatives
+and standards used by the legislative branch with the stakeholders. We
+look forward to being the co-hosts for this historic event. We hope
+that you will join us. </p>
+<blockquote>
+<p>Gary Poindexter<br>
+Co-chair, Legislation Workgroup, LegalXML</p>
+<p>Daniel Bennett<br>
+Chair, Taskforce on COAX Conference, LegalXML </p>
+<p>Daniel Greenwood<br>
+Board Liaison to COAX Conference, LegalXML </p>
+</blockquote>
+<p><b>Conference location:</b></p>
+<p>Committee on House Administration hearing room<br>
+1310 Longworth House Office Building<br>
+Washington, DC 20515</p>
+<p><b>Conference Agenda:</b> </p>
+<p><u>Tuesday, April 24, 2001</u></p>
+<table summary="" border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tbody><tr> 
+                <td width="33%"> 
+                  <p>8:00 - 8:45AM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Breakfast Overview of XML</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>9:00 - 9:30 AM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Introductions Conference Welcome</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>9:30 - 11:00 AM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Panel 1 Legislative Branch Current Use of XML</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>11:00 - 12:30 PM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Panel 2 Summary of XML Tools and Value Added Republication 
+                    using XML</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>1:00 - 2:00 PM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Sponsored Lunch and Speaker (TBA)</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>2:30 - 4:30 PM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Panel 3 Importance of communications and open standards</p>
+                </td>
+              </tr>
+              <tr> 
+                <td width="33%"> 
+                  <p>4:30 - 5:30 PM</p>
+                </td>
+                <td width="67%"> 
+                  <p>Wrap Up Open Discussion of LegalXML Standards Efforts</p>
+                </td>
+              </tr>
+            </tbody></table>
+<p><i>Note: Times may be modified.</i></p>
+<p><b>Contacts:</b></p>
+<p><u>Contact for the COAX conference:</u><br>
+Daniel Bennett<br>
+DotGov Communications<br>
+1601 Argonne Place, NW #518<br>
+Washington, D.C. 20009<br>
+<a href="mailto:daniel@citizencontact.com">daniel@citizencontact.com</a></p>
+<p><u>Vendors wishing to participate as sponsors should contact:</u><br>
+Gary Poindexter<br>
+KPMG Consulting<br>
+<a href="mailto:gpoindexter@kpmg.com">gpoindexter@kpmg.com</a></p>
+<!-- end body text -->
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr valign="top"> 
+<td rowspan="2" bgcolor="#3c1a57" valign="bottom" width="131"><img src="coax_files/bottom_gear_b.jpg" alt="Gear Image" title="Gear Image" height="274" width="131"></td>
+<td height="259" width="17">&nbsp;</td>
+</tr>
+<tr valign="top"> 
+<td height="11" width="17">&nbsp;</td>
+<td align="center" height="120" valign="bottom" width="628">
+<p><a href="http://www.legalxml.org/about/" class="footer">ABOUT</a> | <a href="http://www.legalxml.org/members/" class="footer">MEMBERS</a> | <a href="http://www.oasis-open.org/join/" class="footer">JOIN</a> | <a href="http://www.legalxml.org/news/" class="footer">NEWS</a> | <a href="http://www.legalxml.org/events/" class="footer">EVENTS</a> | <a href="http://www.oasis-open.org/members/" class="footer">MEMBERS ONLY</a> | <a href="http://xml.coverpages.org/" class="footer">COVER PAGES</a> | <a href="http://www.xml.org/" class="footer">XML.ORG</a><br><br>
+</p>
+<div class="littletext">
+<p align="center">Copyright © 1993-2008 OASIS ®. All rights reserved.</p>
+</div>
+
+</td>
+</tr>
+</tbody></table>
+</body></html>

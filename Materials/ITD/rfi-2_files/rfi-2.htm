@@ -1,0 +1,199 @@
+<HTML>
+<HEAD>
+<BASE HREF="http://www.state.ma.us/itd/legal/rfi-2.htm">
+
+<TITLE> Law and Policy </TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFFF">
+<CENTER><A HREF="index.htm"><IMG SRC="grafix/top5.gif"></A></CENTER><p>
+
+
+<STRONG>
+<FONT SIZE=7><P ALIGN="CENTER">Request for Information</P>
+
+</FONT><FONT SIZE=6><P ALIGN="CENTER">Secure On-Line Transactions</P>
+
+</B><FONT SIZE=4><P ALIGN="CENTER">Thursday, April 24, 1997</P>
+</FONT> </STRONG>
+ 
+<FONT SIZE=2>
+<P>The Commonwealth of Massachusetts, acting through the on-line Government Task Force, is contemplating the release of one or more procurements for electronic commerce products and/or services.  This Request for Information (RFI) is intended to solicit information that could be useful in drafting subsequent RFRs.  This RFI specifically seeks information on products and/or services that will enable the Commonwealth of Massachusetts to use the Internet and internal networks for secure messaging and transactions.</P>
+
+
+<STRONG><P ALIGN="CENTER">Section 1:  Background </P></STRONG>
+ 
+<P>The Chief Information Officer for the Commonwealth of Massachusetts has convened the On-Line Government Task Force to chart the immediate future course of on-line government in Massachusetts.  The Task Force consists of representatives from a number of different agencies, departments and offices of the Commonwealth. The Task Force is investigating solutions that improve efficiency and service quality using internal and Internet-based electronic communications that possess authentication (to achieve access control as well as non-repudiation), integrity, and confidentiality.</P>
+ 
+<P>The Commonwealth has made information technology (IT) development and electronic communications a priority, spending approximately $350 million on IT annually.  The Commonwealth seeks to make a large number of routine business transactions available over the Internet and internal networks, with the intent that they will be performed for less cost and conducted at a higher quality service level for citizens, regulated entities, vendors and others.  The Commonwealth seeks to create methods for secure access to a number of business transactions via electronic media, including licensing, permitting, applications, filings, procurement and a host of other functions.  Internally, the Intranet is being looked at as a potential mechanism to alleviate the crush of paper associated with a large number of routine state government functions, including personnel, procurement drafting, and other collaborative data sharing, work flow or messaging applications.  </P>
+ 
+<P>Today, the Registry of Motor Vehicles (RMV) processes a number of transactions and accepts credit card payment over the state web site.  The RMV transactions assure the confidentiality of credit card data over the Internet by use of public key cryptography implemented with the SSL 2 protocol.  The Division of Banks (DOB) has embarked on a pilot project to receive authenticated on-line filings by banks over the state web site.  The DOB pilot assures the data is confidential and the identity of the filing bank and individual filer is authenticated by use of public key cryptography implemented with the SSL 3 protocol.  The banks participating in the DOB pilot are issued standard X.509v3 digital certificates associated with the bank public key.  </P>
+ 
+<P>While the Task Force is interested in all relevant replies to this request for information, responses that propose cost effective and currently available methods to assure non-repudiation are of particular interest.  Non-repudiation means a method to prevent or sufficiently rebut subsequent denial of transmittal or receipt of a given message or participation in a given transaction.  In some cases, this non-repudiation must be capable of tying an individual to a particular piece or set of data at a particular time.  For non-repudiation, mere access control based on an SSL 3 implementation of public key cryptography and digital certificates will not suffice, unless some additional technique exists to bind the identity of a given party to the message or transaction engaged in by that party.</P>
+
+<STRONG> <P ALIGN="CENTER">Section 2:  Purpose of RFI</P></STRONG>
+ 
+<P>The Task Force seeks responses from vendors which offer information about currently- available solutions to any or all of the following business needs and example applications:</P>
+ 
+<STRONG> <P>2.1  Internet access with Authentication. </P></STRONG>
+</B> 
+<P>Such an application would involve access via the Internet to Commonwealth data located behind the firewall.  </P>
+ 
+ <P>Example:</P>
+</B> 
+<P>Certain companies, for a legitimate business purpose, need to know the driving records of certain employees.  A solution is needed that will allow a pre-selected group of companies to access employee driver histories and determine driver status from a state database.  Access control is required to allow companies to access only the driving records of  their employees.</P>
+ 
+ <P>General Considerations:</P>
+</B> 
+<P>Authentication, in the example above, is being utilized to assure access control to defined data on the network.  Assuming the data is being viewed with a web browser, then some provision may also be required to assure the data remains confidential and has not been altered while in transit over the Internet.  </P>
+ 
+<STRONG> <P>2.2  Internet-based data submission with non-persistent connection.</P></STRONG>
+ 
+</B><P>Such an application would involve access via the Internet to a Commonwealth database behind the firewall for the purpose of submitting information.  </P>
+ 
+ <P>Example 1:</P>
+</B> 
+<P>For the purpose of posting requests for response as part of a procurement, certain users would be allowed access to a state procurement services database, provided authentication and non-repudiation is available for each submission.</P>
+ 
+ <P>Example 2:</P>
+</B> 
+<P>For the purpose of applying for a professional or commercial license renewal, certain users would be allowed access to a state license database, where the application form would be electronically delivered.  As in the previous example, non-repudiation is required to prevent the applicant from denying information submitted in the application and to provide proof that the state received a particular application.</P>
+ 
+ <P>General Considerations:</P>
+</B> 
+<P>The posting of bids in response to a procurement and the submission of a license application raise a number of issues that are unique to those  processes.  The Commonwealth will be performing a number of other transactions as well, including grant applications, on-line permitting and various filings with state agencies.  The Commonwealth will pursue some transactions under this category (Internet-based data submission with non-persistent connection) that will not require non-repudiation.  Some of these transactions would require only front-end authentication for access control, other transactions would not require authentication of the identity of the person submitting data for either access control or non-repudiation.  However, the Task Force is particularly interested in information relating to non-repudiation.</P>
+ 
+<STRONG> <P>2.3  Internet-based data exchange with persistent connection.</P></STRONG>
+ 
+</B><P>Such an application would involve access via the Internet to an on-line application located behind the firewall such that the user would be authenticated once, and the system would maintain the identity of the user in all portions of the application throughout the duration of the session.  </P>
+ 
+ <P>Example:</B> </P>
+ 
+<P>For the purpose of negotiating and crafting contract agreements, both state users and non-governmental users would be allowed access to a common document management and electronic workflow application, with all users considered &quot;members&quot; of the workflow and able to perform tasks in the workflow.  The application front-end allows users to submit documents, edit documents and query databases behind the firewall.</P>
+ 
+<STRONG> <P ALIGN="CENTER">Section 3:  Environment</P></STRONG>
+ 
+<P>The following diagram describes the Commonwealth’s current and near-term computing and communications environment.  See Attachment 1.</P>
+ 
+ 
+<STRONG> <P ALIGN="CENTER">Section 4:  Other Considerations</P></STRONG>
+ 
+<P>Interested vendors may provide information regarding products, services and/or integrated solutions that address either some or all of the above-mentioned business needs. The purpose of this RFI is to provide the Commonwealth with information that could be useful in developing one or more RFRs for secure on-line transactions and messaging.  Please feel free to respond to any specific questions in this RFI or to offer any other information that you feel could be useful to the Commonwealth in making decisions about an RFR.  In addition to the questions raised in the previous sections, the Commonwealth is interested in information on the following. </P>
+ <DIR>
+
+<P>4.1  Identify and describe all software or hardware required on a client workstation for the proposed product/service/solution.  </P>
+ 
+<P>4.2  Identify and describe any back-end software or hardware required of the proposed product/service/solution.</P>
+
+<P>4.3 Describe how your product/service/solution scales to the enterprise.</P>
+
+
+<P>4.4 What are the short, mid and long term electronic records archival ramifications of the proposed product/service/solution, including suitability for audit and admissibility in evidence in a court?</P>
+ 
+<P>4.5 How is the product/service/solution compliant with the provisions of the Americans with Disabilities Act?</P>
+ 
+
+<P>4.6 How is the product/service/solution Year 2000 compliant?</P>
+ 
+
+<P>4.7 What, if any, privacy concerns are raised by the authentication techniques proposed and how are those concerns addressed?</P>
+ 
+<P>4.8 Does the proposed product/service/solution offer any on-line payment capabilities?  Please describe.</P>
+ 
+<P>4.9 Describe any current implementations of your product/service/solution and note any business partners involved with that implementation.</P>
+ 
+
+<P>4.10 Provide information about your company and its history.</P>
+ 
+<P>4.11 Provide cost information about the proposed product/service/solution.</P>
+</DIR> 
+ 
+<STRONG> <P ALIGN="CENTER">Section 5:  Procedural Information</P></STRONG>
+ 
+<P>This RFI is not an offer or solicitation and does not obligate or bind the Commonwealth to procure any goods or services as a consequence.  Responses to this RFI do not constitute bids or proposals and are not legally binding on the responding party.  Respondents may not charge ITD or the Commonwealth of Massachusetts for any costs associated with the preparation of  responses to this RFI.  This RFI is being released on Commonwealth’s Procurement Access and Solicitation System (Comm-PASS).  A copy of this RFI is also available at ITD’s legal department web site at &lt;http://www.state.ma.us/itd/legal&gt;.  The schedule of events for this RFI, subject to amendment, is:</P>
+ 
+<P>&#9;&#9;Thursday, April 24, 1997&#9;RFI released on Comm-PASS</P>
+<P>&#9;&#9;Friday, May 2, 1997&#9;&#9;Informational session</P>
+<P>&#9;&#9;Monday, May 12, 1997&#9;Responses due</P>
+ 
+<P>The informational session will be held at One Ashburton Place, Room 801, Boston, MA 02108 from 10:00 am to 11:00 am.  Please inform the chairman of the procurement management team (preferably by e-mail) if you will attend the session so that adequate seating can be made available.  Organizations or individuals responding to this RFI should submit ten copies of their response in writing, accompanied by any attachments, exhibits or software, to the chairman of the procurement management team by 5:00 pm on Monday, May 12, 1997.  Responses must also be submitted via e-mail or on floppy disk in Word for Windows, WordPerfect format, or as a Text-Only document.  The chairman of the procurement management team is:</P>
+
+<P>
+
+Dan Greenwood, Deputy General Counsel, Information Technology Division<BR>
+On-Line Government Task Force, Team Leader<BR>
+One Ashburton Place, Room 801<BR>
+Boston, MA 02108<BR>
+617.973.0071<BR>
+<A HREF="mailto:dgreenwood@state.ma.us">dgreenwood@state.ma.us</A>
+
+
+<p>
+<hr>
+<CENTER> <A HREF="index.htm">back to the home page</A></B><br>
+<A HREF="mailto:dgreenwood@state.ma.us">Comments About This Site?</A><br>
+Copyright 1997, Commonwealth of Massachusetts.  All rights reserved.</CENTER>
+</FONT>
+</BODY>
+
+<SCRIPT language="Javascript">
+<!--
+
+// FILE ARCHIVED ON 20000531212428 AND RETRIEVED FROM THE
+// INTERNET ARCHIVE ON 20080720073716.
+// JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+// ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+// SECTION 108(a)(3)).
+
+   var sWayBackCGI = "http://web.archive.org/web/20000531212428/";
+
+   function xResolveUrl(url) {
+      var image = new Image();
+      image.src = url;
+      return image.src;
+   }
+   function xLateUrl(aCollection, sProp) {
+      var i = 0;
+      for(i = 0; i < aCollection.length; i++) {
+         if (typeof(aCollection[i][sProp]) == "string") { 
+          if (aCollection[i][sProp].indexOf("mailto:") == -1 &&
+             aCollection[i][sProp].indexOf("javascript:") == -1) {
+            if(aCollection[i][sProp].indexOf("http") == 0) {
+                aCollection[i][sProp] = sWayBackCGI + aCollection[i][sProp];
+            } else {
+                aCollection[i][sProp] = sWayBackCGI + xResolveUrl(aCollection[i][sProp]);
+            }
+         }
+         }
+      }
+   }
+
+   xLateUrl(document.getElementsByTagName("IMG"),"src");
+   xLateUrl(document.getElementsByTagName("A"),"href");
+   xLateUrl(document.getElementsByTagName("AREA"),"href");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"codebase");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"data");
+   xLateUrl(document.getElementsByTagName("APPLET"),"codebase");
+   xLateUrl(document.getElementsByTagName("APPLET"),"archive");
+   xLateUrl(document.getElementsByTagName("EMBED"),"src");
+   xLateUrl(document.getElementsByTagName("BODY"),"background");
+   var forms = document.getElementsByTagName("FORM");
+   if (forms) {
+       var j = 0;
+       for (j = 0; j < forms.length; j++) {
+              f = forms[j];
+              if (typeof(f.action)  == "string") {
+                 if(typeof(f.method)  == "string") {
+                     if(typeof(f.method) != "post") {
+                        f.action = sWayBackCGI + f.action;
+                     }
+                  }
+              }
+        }
+    }
+
+
+//-->
+</SCRIPT>
+
+</HTML>
+
