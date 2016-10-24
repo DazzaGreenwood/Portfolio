@@ -1,0 +1,3996 @@
+<HTML>
+
+
+<HEAD>
+<BASE HREF="http://www.state.ma.us/itd/legal/e-sig.htm">
+
+
+
+<TITLE> ELECTRONIC SIGNATURES AND RECORDS">ELECTRONIC SIGNATURES AND RECORDS</TITLE>
+
+
+
+
+
+</HEAD>
+
+
+<BODY BGCOLOR="#FFFFFFF">
+
+
+<P>
+
+
+<CENTER><h2><A NAME="ELECTRONIC SIGNATURES AND RECORDS">
+
+
+
+
+
+ELECTRONIC SIGNATURES AND RECORDS:<br>
+
+
+Legal, Policy and Technical Considerations</A>
+
+
+</h2><p>
+
+
+Daniel Greenwood, Esq<br>
+
+
+Version 1.0<B> | </B>Draft: 1/9/97<br>
+
+
+Comments to: <A HREF="mailto:dan@civics.com">dan@civics.com</A><br>
+
+
+<A HREF="article9.doc">Download Version With Footnotes and Formatting in Microsoft Word</A></CENTER><p>
+
+
+<p>
+
+
+NOTE: The forward specifically relates to a program to be held by Massachusetts Continuing Legal Education.  The program, "Health Care and Information Technology" will be held January 15, 1997.<p>
+
+
+
+
+
+<B>Hypertext Table of Contents:<p></B>
+
+
+<A HREF="#forw">Forward</A><br>
+
+
+<A HREF="#Introduction">Introduction</A><br>
+
+
+<A HREF="#What Is a Digital Signature">What Is a Digital Signature</A><br>
+
+
+<A HREF="#Public Key Cryptography">Public Key Cryptography<br>
+
+
+</A><A HREF="#Hash Functions and Message Digests">Hash Functions and Message Digests</A><br>
+
+
+<A HREF="#Certification Authorities">Certification Authorities</A><br>
+
+
+<A HREF="#The Difference Between Electronic Signatures">The Difference Between Electronic Signatures and Digital Signatures
+
+
+</A><br>
+
+
+<A HREF="#Digital Certificates">Digital Certificates
+
+
+</A><br>
+
+
+<A HREF="#Technical Capabilities and Legal Judgments">Technical Capabilities and Legal Judgments
+
+
+</A><br>
+
+
+<A HREF="#Evidentiary Implications of Non-Digital Signature">Evidentiary Implications of Non-Digital Signature Based Authentication
+
+
+</A><br>
+
+
+<A HREF="#Information Security: How Much is the Right">Information Security: How Much is the Right Amount?
+
+
+</A><br>
+
+
+<A HREF="#Information Security Benefits of Digital Signature">Information Security Benefits of Digital Signature Technology
+
+
+</A><br>
+
+
+<A HREF="#The State of the Law and Legislative Initiatives">The State of the Law and Legislative Initiatives
+
+
+</A><br>
+
+
+<A HREF="#Conclusion">Conclusion
+
+
+</A><br>
+
+
+
+
+
+<hr>
+
+
+<p>
+
+
+<U><B><FONT SIZE=4><A NAME="forw">Forward</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+The following article deals generally with legal aspects of electronic
+
+
+signatures and writings.  Though the article is not specifically
+
+
+tailored to medical systems, the information is quite relevant
+
+
+to the field of health care and the topics under consideration
+
+
+for this Massachusetts Continuing Legal Education program.  The
+
+
+document is a draft of an article that will be published in the
+
+
+National Law Journal.  While I am solely responsible for this
+
+
+draft, the ultimate article will be co-authored with attorney
+
+
+Lee Gesmer, a partner of the Boston law firm Lucash, Gesmer and
+
+
+Updegrove, specializing in the field of high technology law. 
+
+
+It should also be noted that, while I am an attorney for the Commonwealth
+
+
+of Massachusetts and reference is made throughout this article
+
+
+to legal and policy matters involving the Commonwealth, I submit
+
+
+this work in my personal capacity and nothing herein necessarily
+
+
+represents the views, positions or any official comment by the
+
+
+Commonwealt <A NAME = rfn1></A>. <A HREF = "#fn1">1 </A> 
+
+
+<P>
+
+
+Information technology can be a powerful enabling tool for health
+
+
+care.  According to the Chicago Tribune<A NAME = rfn2></A>, <A HREF = "#fn2">2 </A>    a 21-year-old student
+
+
+in China fell into a coma due to a mysterious illness.  The finest
+
+
+doctors in Beijing were unable to diagnose or treat her, and her
+
+
+condition was fast deteriorating.  Her friends sent a desperate
+
+
+plea for help over the Internet, describing her symptoms and requesting
+
+
+assistance.  Some 2,000 doctors and researchers in 18 countries
+
+
+replied to the message, and from those responses the illness'
+
+
+cause was established.  The young student's life was saved as
+
+
+a result of that use of the Internet.  This dramatic example illustrates
+
+
+the previously impossible communications made simple, inexpensive
+
+
+and commonly accessible through use of networked computer<A NAME = rfn3></A>. <A HREF = "#fn3">3</A>      <BR>
+
+
+<P>
+
+
+An early Clinton Administration health security proposal suggested
+
+
+the following benefits from a national health information infrastructure:
+
+
+<BR>
+
+
+<P>
+
+
+1. clear and useful consumer information
+
+
+<br>
+
+
+2. health status measures
+
+
+<br>
+
+
+3. health care system monitoring and evaluation
+
+
+<br>
+
+
+4. linking health record information to improve patient care
+
+
+<br>
+
+
+5. cost effective, streamlined administration, and
+
+
+<br>
+
+
+6. identification of fraudulent activities <A NAME = rfn4></A> <A HREF = "#fn4">4</A>  <BR>
+
+
+<P>
+
+
+ Commentators have noted that the benefits of networked health
+
+
+care information outweigh the risks to privacy<A NAME = rfn5></A>. <A HREF = "#fn5">5</A>     Though providing
+
+
+for adequate information security protections can involve significant
+
+
+investments, the cost savings to be had from widespread use of
+
+
+new communications technologies are staggering.  For instance,
+
+
+switching to electronic data interchange (EDI) would yield billions
+
+
+of dollars in savings annually<A NAME = rfn6></A>. <A HREF = "#fn6">6</A>    The current paper based system
+
+
+is ill suited to health care in both form and function.  The Government
+
+
+Accounting Office estimates that the 34 million hospital admissions
+
+
+and 1.2 billion physicians visits each year generate the equivalent
+
+
+of 10 billion pages of medical records<A NAME = rfn7></A>. <A HREF = "#fn7">7</A>     <BR>
+
+
+<P>
+
+
+ Evidently, not only is medical data voluminous, but it is also
+
+
+poorly organized - sometimes inaccessible when needed and existing
+
+
+in several different locations, though associated with a single
+
+
+patient, perhaps even a single episode<A NAME = rfn8></A>. <A HREF = "#fn8">8</A>                   In addition to administrative
+
+
+and cost savings, networked computing presents conspicuous advantages
+
+
+in quality of care and research directly advance the core mission
+
+
+of health care<A NAME = rfn9></A>. <A HREF = "#fn9">9</A>    The benefits of electronic information systems
+
+
+include accessible and comprehensive patient records, networked
+
+
+consultations without regard to geography, ease of treatment tracking
+
+
+and instant availability of critical clinical and research data
+
+
+capable of being queried, stored and cross-indexed to a patients
+
+
+file.<BR>
+
+
+<P>
+
+
+ Several leading organizations in the field of medicine have publicly
+
+
+advocated for moving toward integration of information technologies
+
+
+into health care systems, including the American Hospital Association
+
+
+and the Institute of Medicine's Committee on Regional Health Data
+
+
+Networks<A NAME = rfn10></A>. <A HREF = "#fn10">10</A>   It is only a matter of time before ubiquitously networked
+
+
+computer systems allow for spontaneous, secure, authenticated
+
+
+and confidential transactions around the world.  The cost and
+
+
+quality efficiencies of such an Information Infrastructure promise
+
+
+untold benefits in all sectors of the economy and society.  As
+
+
+this transition hastens, attorneys will increasingly be asked
+
+
+for advice about the legal consequences of creating, receiving,
+
+
+transmitting, destroying and converting to electronic records.
+
+
+ The role of electronic signatures, network security, and the
+
+
+contracts and licenses associated with digital systems and services
+
+
+will play a key role in the practice of modern law.  The field
+
+
+of health care, with its special concern for confidentiality and
+
+
+literally life and death reliance on the accuracy and timeliness
+
+
+of information presents the strongest challenge and the greatest
+
+
+opportunities for adoption of emerging information technology.
+
+
+ Legal and policy  infrastructure supporting computer networks
+
+
+will be vital to the success of this transition.
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Introduction">Introduction</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ The world is changing and the lawyers must change with it.  A
+
+
+digital revolution has begun.  The wide-scale transition from
+
+
+traditional forms of writing and communication is creating uncertainty
+
+
+in commerce, health care, government and all social and economic
+
+
+sectors.  Specifically, records are increasingly created, transmitted
+
+
+and stored in electronic media and parties are using computer
+
+
+networks to access and communicate information with other parties.
+
+
+ What is the legal status of an electronic signature?  Are electronic
+
+
+records the legal equivalent of paper writings?  It is clear that
+
+
+such uses of electronic data are saving enormous administrative
+
+
+and other transactional costs.  The ability to access information
+
+
+in digital form is also creating qualitative cultural and economic
+
+
+improvements by allowing world-wide networked publishing, trade,
+
+
+education and interactive collaborations.  However, the legal
+
+
+implications of these changes will require attorneys to adapt
+
+
+to new vocabularies and ways of thinking.  This article will explore
+
+
+issues surrounding the use of electronic signatures and writings
+
+
+in the context of information security and the law.<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="What Is a Digital Signature">What Is a Digital Signature</A></FONT></B></U>?
+
+
+<BR>
+
+
+<BR>
+
+
+<P>
+
+
+A digital signature allows a party to send a secure message over
+
+
+an open, otherwise non-secure computer network.  The phrase digital
+
+
+signature is a term of art.  A digital signature is not based
+
+
+on an actual hand signed image, rather it is based on a complex
+
+
+mathematical formula that allows networked communications to be
+
+
+authenticated, confidential and non-repudiable.  Though the technology
+
+
+is involved, it is helpful that lawyers have at least a passing
+
+
+understanding of the underlying content of digital signatures.
+
+
+ There are two basic technical processes that combine to make
+
+
+a digital signature.  The first function is known as &quot;public
+
+
+key encryption.&quot;  The second function is called a &quot;hash.&quot;
+
+
+ Encryption is simply the process by which information is scrambled
+
+
+by use of a code.  <BR>
+
+
+<P>
+
+
+Military communications have relied on more or less advanced methods
+
+
+of encryption for thousands of years.  In fact, Alexander the
+
+
+Great communicated with his generals by sending messages in which
+
+
+each letter was shifted a certain number of positions (a two position
+
+
+shift replaces every &quot;a&quot; with a &quot;c&quot;, every
+
+
+&quot;b&quot; with a &quot;d&quot;, and so on).  This was a form
+
+
+of &quot;secret key encryption&quot; - because anyone who knew
+
+
+the secret code could send and receive messages securely.  Today,
+
+
+commercially available encryption software creates encryption
+
+
+so strong that it is all but impossible to break the code and
+
+
+ascertain the original message without the use of the authorized
+
+
+software.  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Public Key Cryptography">Public Key Cryptography</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ Unfortunately, a secret key system requires the sender to transmit
+
+
+the code to the receiver in a safe manner - not allowing the code
+
+
+to fall into unauthorized hands - because anyone with the secret
+
+
+code can read all messages sent.  Since the Internet is very vulnerable
+
+
+to message interception, it becomes impractical to deliver the
+
+
+secret code to message recipients.  Enter: Public Key Cryptography.
+
+
+ With this type of encryption, information that is encrypted with
+
+
+one key from a given pair can only be decrypted by the other key.
+
+
+ This is similar to the old &quot;secret decoder rings&quot; found
+
+
+in boxes of Cracker Jacks.  Users of this system would keep their
+
+
+private key very safe (perhaps password protected or even embedded
+
+
+in a smartcard or other hardware device) but they would make their
+
+
+public key freely available, by sending it to all potential recipients
+
+
+of messages or posting it to an Internet public key directory.
+
+
+ In this way, the private key holder can send a message to anyone
+
+
+on the Internet, and, if his public key decrypts the message,
+
+
+the recipient knows it must have come from the private key holder.
+
+
+ Conversely, anyone on the Internet that wants to send the private
+
+
+key holder a message can encrypt the message with his public key
+
+
+(again, the public key is freely available) and send the message
+
+
+with the knowledge that only the private key holder can read the
+
+
+encrypted text.  <BR>
+
+
+<P>
+
+
+ For example, if you receive a message from John Smith, and you
+
+
+use Smith's public key to successfully unencrypt the message,
+
+
+you know, to an extremely high degree of certainty, that Smith,
+
+
+and not an impostor, wrote the message.  The message could <I>only</I>
+
+
+have been created by someone with Smith's private key, and presumably
+
+
+the only person with Smith's private key is Smith.  This can be
+
+
+seen as the equivalent of a signature on the data sent by Smith
+
+
+- a so-called &quot;digital signature.&quot;<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Hash Functions and Message Digests">Hash Functions and Message Digests</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ A &quot;hash function&quot; is a process that creates a relatively
+
+
+small number that represents a much larger amount of electronic
+
+
+data.  For instance, if I had a ten page word processing document
+
+
+on my computer hard drive, I could use special hashing software
+
+
+to derive a particular number associated with that document. 
+
+
+If even one comma were changed on the document, the resulting
+
+
+hash number from the changed document would be completely different.
+
+
+ This number is called the &quot;message digest.&quot;    Digital
+
+
+signatures use a &quot;one way hash function&quot; - that means
+
+
+there is no way to reverse engineer or derive the content of the
+
+
+message based on the resulting message digest.  When you send
+
+
+a digest along with a message, the recipient can check to see
+
+
+if the message has been tampered with by using the same hashing
+
+
+software to make her own digest of the message and then checking
+
+
+to see if the two numbers match.  If the digest number sent with
+
+
+the message matches the digest created by the recipient, then
+
+
+she know that the message is exactly the same as when it was sent.
+
+
+<BR>
+
+
+<P>
+
+
+ To achieve a digital signature, the sender's software creates
+
+
+a message digest and then encrypts that number with the sender's
+
+
+private key.  This &quot;encrypted digest&quot; is then sent along
+
+
+with the text of the message.  That way, the recipient can determine
+
+
+both who the message came from and that the content has not been
+
+
+tampered with just by decrypting the digest and checking to see
+
+
+that it matches the digest of the message she received.<BR>
+
+
+<P>
+
+
+ The entire message could also be encrypted, but that would only
+
+
+be done to achieve confidentiality of the message.  If the sender
+
+
+merely wants to sign a message, only the digest needs to be encrypted.
+
+
+ This is important because it is significantly quicker to send
+
+
+a receive messages that are not encrypted.  The technology is
+
+
+developing to give users a choice when a message is sent: you
+
+
+can &quot;sign&quot; the message or &quot;sign and encrypt&quot;
+
+
+the entire message.  Remember, it will cost additional delays
+
+
+and computer resources to use encryption for confidentiality as
+
+
+well as signatures, so think about when you want to use each.
+
+
+ This system, however, will not require any technical expertise
+
+
+among users above that required to use a word processor.  The
+
+
+process will be nearly &quot;transparent&quot; to the end user.
+
+
+ All that will be required is a few clicks of the mouse to sign
+
+
+or encrypt messages and to accept and review the signed messages
+
+
+sent to the user.  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Certification Authorities">Certification Authorities</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ The issue, legally, is to bind the identity of a particular party
+
+
+to a particular public key.  This need has been widely perceived
+
+
+in the marketplace and several companies are stepping into the
+
+
+so-called &quot;trusted third party&quot; business.  Such a company
+
+
+is known as a certification authority (C/A). The C/A will issue
+
+
+a certificate that identifies the person associated with a given
+
+
+public key (the &quot;subscriber&quot;).  The C/A is responsible
+
+
+for undertaking certain measures to ascertain the identity of
+
+
+the person to whom it issues a certificate.  The market appears
+
+
+to be evolving toward tiered levels of certificates.  Relatively
+
+
+inexpensive certificates may only represent an attestation by
+
+
+the C/A that the subscriber presented a notarized letter indicating
+
+
+her identity through the U.S. mail.  More expensive certificates
+
+
+might be issued based on more stringent measures by the C/A, such
+
+
+as requiring the subscriber to physically show up at a location
+
+
+and present multiple forms of photo identifications and so on <A NAME = rfn11></A>. <A HREF = "#fn11">11</A>         
+
+
+<BR>
+
+
+<P>
+
+
+ When the subscriber wishes to use her private key to sign a record,
+
+
+she would send a certificate, issued by a C/A along with the transmission.
+
+
+ That way, the relying party who receives the transmission can
+
+
+independently verify the identity of the subscriber by reference
+
+
+to the C/A's online database of valid certificates and revoked
+
+
+certificates.  A subscriber would have a responsibility to notify
+
+
+the C/A if she discovers that her private key has been lost or
+
+
+compromised.  In this case, the C/A would post this information
+
+
+to a Certificate Revocation List.  Prudent persons would check
+
+
+such a list before relying on a given certificate.  Banks, the
+
+
+U.S. Post Office, and several other large and small entities are
+
+
+positioning to become C/As.   <BR>
+
+
+<P>
+
+
+In a sense, the entire public key system is built on two deep
+
+
+fault lines.  First, the private key of the subscriber must remain
+
+
+secure.  If the private key is stolen or used without authorization,
+
+
+the whole system falls.  Secondly, there must be a trusted third
+
+
+party to the transaction.  Without this certification, again,
+
+
+the system falls.   The recipient must have objective grounds
+
+
+for confidence that the public key which &quot;unlocks&quot; the
+
+
+signature, leading to the critical elements of authenticity and
+
+
+message integrity, is associated with Smith.   Without this assurance,
+
+
+the fact that a public key unlocks a message encrypted with a
+
+
+private key has no meaning other than that the two keys are mathematically
+
+
+related.  Today, there is a serious debate about what policies
+
+
+and practices C/As should use.  It is clear that this system requires
+
+
+some common understanding among C/As and the user population regarding
+
+
+uniform levels of authentication of the subscribers.  There are
+
+
+multiple views about what, if any, laws are called for at present
+
+
+to further define, and perhaps limit, the rights and liabilities
+
+
+of C/As, subscribers and relying parties who use this system.
+
+
+ <BR>
+
+
+<P>
+
+
+ The Commonwealth of Massachusetts has assumed a leadership position
+
+
+among states with regard to the creation of a public key infrastructure.
+
+
+ The Commonwealth is working with several national organizations
+
+
+of state government officials to bring together the fledgling
+
+
+C/A industry for the purpose of discussing more coordinated, predictable
+
+
+and uniform business practices and standards.  There must be an
+
+
+objective method, such as accepted standards, accreditation or
+
+
+licensing whereby consumers, government and business can identify
+
+
+which C/As will be worthy of trust.  The elements of a trustworthy
+
+
+C/A extend to very technical specification as well as to business
+
+
+practices.  Ideally, voluntary, testable, widely recognized industry
+
+
+standards will develop, rather than more rigid government conceived
+
+
+promulgations.  The Commonwealth is also actively involved with
+
+
+joint federal and state efforts to coordinate electronic commerce
+
+
+policies on a national level.  In addition to policy work, the
+
+
+Commonwealth is gaining practical experience with this technology
+
+
+as a business tool.  The Registry of Motor Vehicles web site now
+
+
+uses point to point encryption over the Internet to allow confidential
+
+
+transmission of credit card transactions to renew vehicle registration,
+
+
+pay citations and even order vanity license plates.  The Division
+
+
+of Banks is about to begin a pilot using digital certificates
+
+
+to enable banks to file authenticated documents over the state's
+
+
+Internet web site.  The Information Technology Division makes
+
+
+information available about Commonwealth secure Internet initiatives
+
+
+at &lt;www.state.ma.us/itd/legal&gt;.  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="The Difference Between Electronic Signatures">The Difference Between Electronic Signatures
+
+
+and Digital Signatures</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ An electronic signature is, simply, any symbol or method executed
+
+
+or adopted by a party with present intention to be bound by or
+
+
+to authenticate a record, accomplished by electronic means.  An
+
+
+electronic signature may be created be any electronic means. 
+
+
+For instance, a sophisticated bio-metric device, such as a fingerprint
+
+
+computer recognition system could qualify as an electronic signature,
+
+
+and so would the simple entry of a typed name at the end of an
+
+
+e-mail message.  The principle is that the symbol or method was
+
+
+executed or adopted by the signer with <I>a present intent to
+
+
+sign the record</I>.  This definition focuses on the traditional
+
+
+legal purposes of a signature, not the particular medium or manner
+
+
+chosen to accomplish the signature.  By contrast, a digital signature
+
+
+refers to a particular implementation of public key cryptography.
+
+
+ <BR>
+
+
+<P>
+
+
+ A digital signature can be defined to mean a transformation of
+
+
+a record using an asymmetric cryptosystem and a hash function
+
+
+such that a person having the initial record and the signer's
+
+
+public key can accurately determine: (a) whether the transformation
+
+
+was created using the private key that corresponds to the signer's
+
+
+public key; and (b) whether the initial record has been altered
+
+
+since the transformation was made.  In other words, a digital
+
+
+signature is created by use of a public key system, but an electronic
+
+
+signature includes broadly any computer method, including, but
+
+
+not limited to, public key systems.  Digital signatures are technology
+
+
+specific.  Electronic signatures are technology neutral.<BR>
+
+
+<P>
+
+
+ The use of low security electronic signatures, such as simply
+
+
+typing one's name on an e-mail, raises serious questions of proof
+
+
+regarding the authenticity of such a signature.  However, there
+
+
+are times when low or no levels of security are warranted.  A
+
+
+given transaction or message may be informal, of little or no
+
+
+value nor otherwise reasonably likely to form the basis of subsequent
+
+
+dispute.  For instance, it is common practice to conclude purely
+
+
+social e-mail messages with the typing of the sender's name. 
+
+
+In this case, the name would be a symbol intended to authenticate
+
+
+the document, but not necessarily manifesting an intent to be
+
+
+bound by the content - assuming there exists any particular content
+
+
+at all.  In this context, the word &quot;authenticate&quot; means
+
+
+merely an intent to represent that the signer was the sender.
+
+
+ In common parlance, e-mail among friends and close colleagues
+
+
+is often concluded with the initials of the sender alone.  For
+
+
+more formal, but low risk, electronic transactions, a more robust
+
+
+signature system may be desirable.  This does not necessarily
+
+
+mean a full fledged public key solution is required.  For example,
+
+
+some business and professional online services require a user
+
+
+name and password to access their system.  Once a user is on the
+
+
+system, they may be entitled to additional information or services,
+
+
+such as online dialogue with an expert or authorization to view
+
+
+value-added proprietary documents.  Here, the electronic signature
+
+
+is created by use of a user name and password, probably relying
+
+
+on access control technology far less expensive and simpler to
+
+
+use than public key cryptosystems.  The use of this system may
+
+
+(depending on the understanding of the parties as evidenced by
+
+
+contracts, disclaimers or other conditions of use) authenticate
+
+
+the user and also impliedly, or perhaps expressly, express an
+
+
+intent to be bound by billing rates or other terms.  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Digital Certificates">Digital Certificates</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ As mentioned earlier, digital signatures, when properly implemented,
+
+
+provide an extremely high degree of confidence that a message
+
+
+originated from the person or entity it purports to come from
+
+
+and that the message was not altered.  In addition, the current
+
+
+implementation of this technology relies on particular digital
+
+
+certificates that comply with internationally recognized standards.
+
+
+ This current standard, known as X.509v3, provides for the inclusion
+
+
+of several data fields that specify the name of the private key
+
+
+holder (the subscriber), the name of the issuing certification
+
+
+authority, the period during which the certificate is valid and
+
+
+a copy of the subscriber's relevant public key.  <BR>
+
+
+<P>
+
+
+ This current version of this standard is particularly exciting
+
+
+for legal and policy reasons because it also allows for a number
+
+
+of so-called &quot;certificate extensions&quot; - that is, data
+
+
+fields with no predetermined use.  These open fields can be used
+
+
+to further customize a certificate for a given industry or individual
+
+
+use.  Additional fields might designate a reasonable monetary
+
+
+reliance limit to be associated with a given certificate, or some
+
+
+indication of the signer's authorization limits.  Unlike a traditional
+
+
+pen and ink signature, a digital signature with a customized certificate
+
+
+could denote, in detail, the types of transactions a given employee
+
+
+is authorized to enter or the role a signer is playing within
+
+
+a company.  For instance, Mr. Gates may use one private key to
+
+
+buy low dollar items on the Internet for his personal use or to
+
+
+sign his weekly time sheets (hey - its possible).  He might keep
+
+
+this key on his desktop hard drive and protect it with a password.
+
+
+ However, to sign important high dollar deals Mr. Gates may chose
+
+
+to use a different key, denoting him as the CEO who is authorized
+
+
+to bind his company.  This key may be protected with a more expensive
+
+
+and more trustworthy system, perhaps including smart cards or
+
+
+biometric devices.<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Technical Capabilities and Legal Judgments">Technical Capabilities and Legal Judgments</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ The role of attorneys in assessing the adequacy of a digital
+
+
+signature, particularly in a jurisdiction without detailed digital
+
+
+signature legislation, will involve a special evaluation and recommendation
+
+
+process.  More so than most other fields of legal practice, information
+
+
+technology issues will form the basis of unfamiliar, dynamic and
+
+
+complex facts and circumstances for most lawyers.  The technology
+
+
+is, by nature, fast evolving and very complicated.  Even if you
+
+
+have a computer science degree, you will have to take additional
+
+
+time making sure you understand the basics of current and future
+
+
+technological systems.  However, lawyers do not need computer
+
+
+science degrees to render sound legal advice to clients seeking
+
+
+guidance in these matters.  In the context of electronic signatures,
+
+
+and the probable commercial uses to which they will be put, there
+
+
+are a relatively few key concepts that can be used to assure an
+
+
+accurate &quot;big picture&quot; view of particular technologies.
+
+
+ <BR>
+
+
+<P>
+
+
+ There are an increasing number of technologies being developed
+
+
+that would provide for varying levels of security over open networks.
+
+
+ Clients will look to attorneys and others for guidance about
+
+
+the appropriate level of security for a given line of electronic
+
+
+business or other transactions.  Of course, the average attorney
+
+
+will not be expected to render technical judgments about the information
+
+
+technology investments their clients make.  Very technical analysis
+
+
+can be involved in making such selections, such as interoperability
+
+
+with existing information technology systems, costs to administer,
+
+
+trends in the industry and so on.  However, it is going to be
+
+
+very important for attorneys to cooperate closely with business
+
+
+and technical people in the procurement and deployment of certain
+
+
+computer security systems generally, and systems that require
+
+
+electronic signatures specifically.  The legal consequences that
+
+
+flow from the presence or absence of particular elements of data
+
+
+security will constitute risks, liabilities and other potential
+
+
+costs that should be taken into account from the beginning.  Similarly,
+
+
+relatively small changes to the purchase, or implementation, of
+
+
+a large electronic system can drastically improve a clients position
+
+
+should the system ever be implicated in or form the basis of a
+
+
+dispute, or formal adjudication.  <BR>
+
+
+<P>
+
+
+ A full discussion of network security would necessarily include
+
+
+exploration of disaster recovery systems, physical security, audit
+
+
+trails, security policies, procedures, training and so on. Leaving
+
+
+aside, for purposes of this article, these important but more
+
+
+general issues of network and systems security, lawyers should
+
+
+pay special attention to five basic legal and technical elements
+
+
+when assessing a given electronic signature or other network security
+
+
+system.  Security, in this context, consists of: authentication,
+
+
+access control, confidentiality, message integrity and non-repudiation.
+
+
+These are the terms of art that will form an important part of
+
+
+every lawyers thinking and advice in the field of information
+
+
+technology law for years to come.  Each one of these terms has
+
+
+a specific technical meaning and distinct legal and policy implications.
+
+
+ Here is a very general description of each term:  
+
+
+
+
+
+<UL>
+
+
+<LI><B>Authentication:</B> This is achieved by ascertaining the identities
+
+
+of parties to a message or transaction. <BR>
+
+
+<LI><B>Access Control:</B> This means that information, and other
+
+
+network resources, are available only to authorized parties. 
+
+
+<BR>
+
+
+<LI><B>Confidentiality:</B> This is achieved by keeping the contents
+
+
+of a message or substance of a transaction secret to unauthorized
+
+
+parties. <BR>
+
+
+<LI><B>Message Integrity:</B> This is achieved by ascertaining that
+
+
+a message or other transmission has not been tampered with in
+
+
+transit over a computer network, i.e., it is accurate. <BR>
+
+
+<LI><B>Non-Repudiation:</B> This means that evidence exists tying
+
+
+the identity of a party to the substance of a message or transaction
+
+
+at a certain point in time and the evidence is sufficiently strong
+
+
+to prevent or rebut that party's subsequent denial of same.  
+
+
+</Ul>
+
+
+ As lawyers, we will increasingly be called upon to develop a
+
+
+legal analysis involving one or more of the above concepts.  These
+
+
+technical terms are cropping up in a host of every-day situations.
+
+
+ For instance, as more medical records are made available to treating
+
+
+physicians over multi-hospital computer networks and even over
+
+
+the Internet, it is vital that the confidentiality of those records
+
+
+is maintained.  Similarly, whenever a credit card number and expiration
+
+
+date are transmitted, that information should be kept confidential
+
+
+both in the merchants computer system and while in transit over
+
+
+the network.  Assurance of message integrity is necessary to prove
+
+
+the contents of a contract agreed to by means of electronic commerce.
+
+
+ One seeking to prove a contract will want to show that every
+
+
+clause, word and character in such a contract was received accurately
+
+
+- exactly as it was transmitted.  <BR>
+
+
+<P>
+
+
+ Access control can prevent unauthorized users from availing themselves
+
+
+of certain non-confidential, but valuable network resources, such
+
+
+as computationally demanding analysis programs or scarce communications
+
+
+bandwidth.  In addition, access control measures can stop unauthorized
+
+
+users from viewing, deleting or otherwise manipulating sensitive
+
+
+data.  For instance, a bank might wish to post current interest
+
+
+rates on an Internet web site.  This information is not confidential,
+
+
+in fact, it is widely publicized, but the bank will require assurance
+
+
+that individuals from the general public who are viewing that
+
+
+information can not manipulate the data and change the posted
+
+
+interest rates.<BR>
+
+
+<P>
+
+
+ The concepts of authentication and non-repudiation are particularly
+
+
+important.  In order to separate &quot;authorized&quot; users
+
+
+of information from &quot;unauthorized&quot; users, there must
+
+
+be some reliable way to ascertain the identity of the user.  The
+
+
+Internet was not designed with adequate technical means to achieve
+
+
+this identification.  In fact, without the existence of more robust
+
+
+security measures. it is quite easy to &quot;spoof&quot; the identity
+
+
+of another person on the Internet.  The apparent origin and return
+
+
+address on an e-mail message, for instance, is quite subject to
+
+
+impersonation.  There are several means, not involving cryptography,
+
+
+to achieve authentication, including by use of a password or PIN,
+
+
+a hardware device (perhaps as simple as an inexpensive thin plastic
+
+
+card with a unique magnetic strip), voice recognition, and many
+
+
+other methods.  Authentication information can be used as the
+
+
+basis for other programs that control access or save the authentication
+
+
+data in order to forestall subsequent attempts to repudiate transmission
+
+
+or receipt of a message or transaction.    
+
+
+<P>
+
+
+ 
+
+
+<P>
+
+
+ Finally, though related, the elements of non-repudiation should
+
+
+not be confused with the legal notion of contract &quot;repudiation.&quot;
+
+
+ Non-repudiation should be thought of as sufficient technical
+
+
+evidence that a particular party submitted or received a particular
+
+
+transmission.  Some state statutes are creating evidentiary rebuttable
+
+
+presumptions that a transmission was submitted or received by
+
+
+a particular party under specified technical circumstances, such
+
+
+as when a digital signature is used.  The emerging legislative
+
+
+trend, however, seems to be more technology neutral.  Under this
+
+
+approach, proof that a &quot;secure system,&quot; (defined to
+
+
+include the basic elements of a trustworthy system) was used to
+
+
+generate and transmit the signature will create a rebuttable presumption
+
+
+that the signature is authentic<A NAME = rfn12></A>. <A HREF = "#fn12">12</A>           However, it is helpful to remember
+
+
+that achieving non-repudiation does not necessarily mean that
+
+
+a party will be bound by an obligation or that a given contract
+
+
+will be enforceable.  The laws of contract will, of course, still
+
+
+operate to allow defenses to enforcement and to rebut contract
+
+
+formation based on incapacity, mistake, illegality and so on.
+
+
+ Courts will continue to look to whether substantial performance
+
+
+has been rendered and other legal requirements met.  However,
+
+
+the technical elements of non-repudiation operate to form a solid
+
+
+business and legal foundation on which to build reliable communications.
+
+
+<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Evidentiary Implications of Non-Digital Signature">Evidentiary Implications of Non-Digital Signature
+
+
+Based Authentication</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ It may be helpful, when presented with a request for legal advice
+
+
+based on a client's planned or present use of a secure network
+
+
+system, to run through each of the five elements listed above
+
+
+with the client, or technical person making the presentation.
+
+
+ Based on the answers, you should be able to determine which,
+
+
+if any, of the five elements is present, and to what degree. 
+
+
+For instance, if, upon inquiry, you determine that there is a
+
+
+method for authentication, but no way to assure non-repudiation,
+
+
+then business functions that require billing or creation of other
+
+
+obligations should be questioned. For example, if the computer
+
+
+server merely authenticates the identity of a party upon entry
+
+
+into the system for access control purposes, but then either deletes,
+
+
+over-writes or fails to save that information, then potentially
+
+
+valuable data to prove non-repudiation is being lost.  It may
+
+
+be fruitful to discuss whether there is a way to archive the authentication
+
+
+data in a secure way that would allow it to be entered into evidence
+
+
+should a formal adjudication ever result.  The client could consider
+
+
+any number of process' that would allow you, or the trial attorney,
+
+
+to lay a proper foundation for introduction of the authentication
+
+
+information.  <BR>
+
+
+<P>
+
+
+ Basic issues to consider include proof of the following: the
+
+
+reliability of the hardware and software used; the accuracy of
+
+
+data entered; the integrity of stored records; and; the reliability
+
+
+of the process whereby records are retrieved for the court in
+
+
+perceivable form.  However, for the non-repudiation element in
+
+
+particular, you should contemplate how the system will support
+
+
+the admissibility and weight of evidence that a particular party
+
+
+sent a message or engaged in a transaction.  For instance, think
+
+
+about how the system ensures that the disputed information is
+
+
+identified with the party (was a password given to the signer
+
+
+and was there an agreement about keeping the password safe?) and
+
+
+that unauthorized persons did not have the opportunity to create
+
+
+the or manipulate the information after the transaction (does
+
+
+the server have limited physical and software access - what other
+
+
+procedures are in place to prevent unauthorized access?).  These
+
+
+facts will assist in laying a proper foundation and proffering
+
+
+persuasive evidence.  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Information Security: How Much is the Right">Information Security: How Much is the Right
+
+
+Amount?</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ It will be some time before digital signature technology is pervasively
+
+
+used, and it is entirely possible that it will remain merely one
+
+
+of several technologies for information security.  Given current
+
+
+growth rates, it is clear that, in the meantime, every area of
+
+
+the economy will increase use of computer networks secured by
+
+
+other technologies.  Information security technology and related
+
+
+costs of business process can absorb inordinate amounts of available
+
+
+resources, unless carefully managed.  A modern trend in legal
+
+
+analysis of such systems requires a balancing test.  Specifically,
+
+
+an attorney should ask whether the reliability of the method used
+
+
+to create, store, and communicate the signature or electronic
+
+
+record was appropriate for the purposes for which it was created
+
+
+and transmitted.  A broad range or financial, legal and other
+
+
+relevant factors should be considered and balanced when determining
+
+
+the advisability of a given network security or signature system.
+
+
+<BR>
+
+
+<P>
+
+
+ As a general observation, it seems that many attorneys and other
+
+
+professional initially expect near perfect information security
+
+
+systems to be in place when a process shift from paper to electronic
+
+
+medium is contemplated.  While it is true that some vulnerabilities
+
+
+to the information increase when it is converted to electronic
+
+
+form (ranging from a simple power surge, to a malicious virus),
+
+
+in many, possibly most, situations, the digital information is
+
+
+actually more secure.  Relatively small information security precautions
+
+
+can render the same information far safer when in electronic form.
+
+
+ One should be wary of unreasonable expectations or demands for
+
+
+near 100% security from every conceivable threat just because
+
+
+information is to be maintained in electronic rather than paper
+
+
+form.  A more appropriate, if general, benchmark is to ask whether
+
+
+the electronic system affords approximately the same or better
+
+
+security than analogous paper systems.  This type of analysis
+
+
+should deliberately balance the costs of various security systems
+
+
+against the risks of security breach in light of the entire enterprise.
+
+
+ Of course, some functions will require extremely high degrees
+
+
+of security.  Typically, such a security system commands significant
+
+
+financial and personnel resources to create and maintain.  Determining
+
+
+the right level of information security should be the result of
+
+
+searching analysis of the business, legal and other demands on
+
+
+the enterprise.<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Information Security Benefits of Digital Signature">Information Security Benefits of Digital Signature
+
+
+Technology</A><BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ Based on the description of public key cryptography earlier in
+
+
+this article, it is possible to define precisely how it is so
+
+
+well suited to meet each of the five postulated elements of network
+
+
+security.  When the recipient receives a digitally signed message,
+
+
+if the subscribers public key decrypts the message digest, then
+
+
+the recipient knows to a mathematical certainty that the subscriber's
+
+
+private key must have encrypted the message.  If the certificate
+
+
+indicates that the subscriber is the same person purports to have
+
+
+sent the message, then the recipient knows the signature is authentic
+
+
+(assuming the certification authority inspires sufficient trust
+
+
+and the certificate is listed as valid and not revoked on the
+
+
+C/As database).  This part of the process provides evidence of
+
+
+authentication.  Once the digest is decrypted, the recipient can
+
+
+run the message through a hash function and, if the resulting
+
+
+digest matches the digest that was sent in encrypted form, then
+
+
+the recipient know that the message has not been altered.  In
+
+
+other words, this process of sending an encrypted message digest
+
+
+along with a message can provide solid proof of authentication
+
+
+and message integrity.   <BR>
+
+
+<P>
+
+
+ But, what about access control, confidentiality and non-repudiation?
+
+
+ Access control can be achieved based on a digital certificate
+
+
+quite easily today.  In fact, standard browsers come with the
+
+
+Secure Sockets Layer (SSL) protocol built in.  The current version
+
+
+protocol (SSL3) allows for the automatic exchange of digital certificates
+
+
+between a web browser and a web server, thus creating cross-authentication.
+
+
+ This information can form the basis of a server program that
+
+
+only allows browsers with certain certificates into secure areas
+
+
+of the web site.  Hence, SSL3 can be used to control access to
+
+
+network resources based on the identity of the party seeking to
+
+
+use the resource.  Though the basic formulation for a digital
+
+
+signature does not require that the message be encrypted, if the
+
+
+message were encrypted, then the contents would be confidential.
+
+
+ Finally, non-repudiation can be achieved by keeping records of
+
+
+the original message, the associated encrypted message digest
+
+
+and the attached digital certificate.  With these items, if the
+
+
+sender of the message later attempted to deny having sent the
+
+
+message, then it could be shown that: 1. his public key decrypts
+
+
+a given message digest; 2. that message digest corresponds to
+
+
+the message in question; and 3. the relevant certification authority
+
+
+listed his certificate as valid at the time of the transaction.
+
+
+ To pinpoint the time of the transaction, a digital time stamp
+
+
+service or other general server logs may also be necessary.  
+
+
+<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="The State of the Law and Legislative Initiatives">The State of the Law and Legislative Initiatives</A>
+
+
+<BR>
+
+
+<BR>
+
+
+</FONT></B></U>
+
+
+<P>
+
+
+ Today, there exist a number of legal requirements for transactions
+
+
+to be evidenced by a &quot;writing&quot; or to be &quot;signed.&quot;
+
+
+ The most commonly referenced signature requirement is the Statute
+
+
+of Frauds.  However, a large number, perhaps thousands, of federal,
+
+
+state and local laws, regulations and ordinances also call for
+
+
+a &quot;writing&quot; and a &quot;signature.&quot;  Some of these
+
+
+laws specifically require the writing to be on &quot;paper&quot;
+
+
+and the signature to be &quot;in ink.&quot;  These so-called quill
+
+
+pen laws have caused anomalous legal results from the use of technology
+
+
+as widely accepted as the fax machine.  <BR>
+
+
+<P>
+
+
+ In the notable case of <U>Gilmore v Lujan</U><A NAME = rfn13></A>, <A HREF = "#fn13">13 </A>      the requirement
+
+
+for a lease to be signed was rigidly adhered to by a federal agency
+
+
+when the agency killed a significant business transaction based
+
+
+solely on a faxed rather than ink signature.  The court admonished
+
+
+the agency for their harsh and unreasonable application of a regulation
+
+
+requiring a &quot;holographic signature,&quot; but recognized
+
+
+the right of the agency to so act based on the law as written.
+
+
+ The court noted:<BR>
+
+
+<P>
+
+
+<FONT SIZE=2>While in this instance, denial produces a harsh result,
+
+
+a telefaxed signature is a machine produced signature.  It is
+
+
+the exact situation the amended regulations sought to address.
+
+
+. . The decision we reach here is compelled by the narrow scope
+
+
+of the court's review of agency decisions.  Obviously the equities
+
+
+favor Gilmore, as he is guilty of no omission but use of the United
+
+
+States mails.  Eight days for delivery of mail from Nebraska to
+
+
+Nevada far exceeds the time it should take. Indeed, the Pony Express
+
+
+could have covered the distance with time to spare. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2> Justice Holmes observed that citizens dealing with
+
+
+their government must turn square corners.  &gt; Rock Island,
+
+
+Arkansas, and Louisiana Railway Co. v. United States, 254 U.S.
+
+
+141, 143, 41 S.Ct. 55, 56, 65 L.Ed. 188 (1920).  Gilmore turned
+
+
+all but the last millimeter, but that millimeter, whose traverse
+
+
+is jealously guarded by the BLM, was his undoing.  Relief to Gilmore
+
+
+in this narrow case would expose BLM to no fraud or risk of fraud,
+
+
+as his bona fides are beyond question.  If Gilmore and those other
+
+
+few luckless applicants whose documents are stored rather than
+
+
+delivered by the Postal Service are to get any relief, it must
+
+
+come at the hands of the BLM.  As shown by this case, those hands
+
+
+are more iron than velvet<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+ The case of <U>State ex rel. Ashcroft v Blunt</U><A NAME = rfn14></A> <A HREF = "#fn14">14</A>  is equally
+
+
+noteworthy for its different emphasis.  While out of state, Governor
+
+
+Ashcroft, of Missouri, signed by hand and transmitted by fax various
+
+
+documents, including eleven appointments, two proclamations, two
+
+
+commissions, one appointment as special commissioner or referee
+
+
+and even one extradition order. .  The court held that the use
+
+
+of a fax machine to communicate official acts of the Chief Executive
+
+
+of the state was valid.  In fact, the attention of the court was
+
+
+on the question of the Governor's authority to exercise executive
+
+
+power while out of state, based on the state's constitution. 
+
+
+The court's focus was on the appropriate issue - that of authority
+
+
+and the validity of the underlying transaction - not fixated on
+
+
+the particular medium used.<BR>
+
+
+<P>
+
+
+ Chapter 111 Section 70 of the Massachusetts General Laws is an
+
+
+example of health care legislation that, by its explicit terms,
+
+
+does not appear to allow for a transition to electronic media
+
+
+- even if it could be shown that such a transition would clearly
+
+
+provide superior efficiency, confidentiality and promote the public
+
+
+interest.  The statute reads, in pertinent part:<BR>
+
+
+<P>
+
+
+<FONT SIZE=2>Hospitals or clinics subject to licensure by the
+
+
+department of public health or supported in whole or in part by
+
+
+the commonwealth, shall keep records of the treatment of the cases
+
+
+under their care including the medical history and nurses' notes.
+
+
+ Such records may be made in handwriting, or in print, or by typewriting,
+
+
+or by the photographic or microphotographic process, or any combination
+
+
+of the same.  Whenever preexisting records shall have been photographed
+
+
+or microphotographed and the photographs or microphotographs shall
+
+
+have been duly indexed and filed, such hospital or clinic upon
+
+
+notifying in writing the supervisor of public records referred
+
+
+to in chapter sixty-six may destroy the original records so photographed
+
+
+or microphotographed, and such photographs or microphotographs
+
+
+shall have the same force or effect as the original records from
+
+
+which they were made.<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+The present statutory and judicial framework for writings and
+
+
+signatures has become antiquated and leads to unpredictable, even
+
+
+anomalous results.  This state of affairs has generated some uncertainty
+
+
+among current and would-be adopters of this technology.  This
+
+
+has impeded the natural flow of the market.  It is precisely this
+
+
+state of affairs which has prompted recent legal initiatives to
+
+
+recognize digital and electronic communications.<BR>
+
+
+<P>
+
+
+ On a state level, there has been a surprising amount of activity
+
+
+in the area of digital signature legislation.  The first state
+
+
+to adopt such a law was Utah.  The Utah law, enacted in 1995 and
+
+
+amended in March of 1996 is widely recognized as an important
+
+
+and positive first step toward legal recognition of digital signature
+
+
+technology.  The Utah act provides for the licensure of certification
+
+
+authorities by the Utah Department of Commerce.  Utah's law also
+
+
+details the rights and liabilities of parties to a transaction
+
+
+using public key cryptography and a licensed certification authority.
+
+
+ Washington state adopted legislation closely resembling the Utah
+
+
+law early in 1996.  Other states, most notably Georgia, began
+
+
+considering Utah modeled bills and, for a time, it seemed a consensus
+
+
+was developing among states.<BR>
+
+
+<P>
+
+
+ While a number of states have considered using the Utah act as
+
+
+a model, various policy issues have increasingly moved states
+
+
+toward less regulatory, less technology specific and more incremental
+
+
+approaches.  For example, the states of California and Arizona
+
+
+enacted legislation permitting use of digital signatures for transactions
+
+
+with public entities in each state, respectively.  This legislation
+
+
+authorized their Secretaries of State to promulgate regulations
+
+
+to achieve the purpose of the act.  Still other states passed
+
+
+laws permitting the use of electronic signatures for particular
+
+
+purposes, such as for medical records in the state of Connecticut
+
+
+or for budget and accounting purposes, such as electronic check
+
+
+signing by the Treasurer of the state of Delaware.  Georgia, and
+
+
+a number of states that had legislation resembling the Utah act,
+
+
+allowed the bills to die and opted for further study.<BR>
+
+
+<P>
+
+
+ Today, a new trend is developing among legislative drafters and
+
+
+policy makers.  The state of Massachusetts, notably, exemplifies
+
+
+an effort to craft laws that directly address the legal issues
+
+
+raised by electronic commerce but do not exclusively enshrine
+
+
+public key cryptography in statute.  This approach seeks to remove
+
+
+legal obstacles to electronic communications and transactions
+
+
+generally, by giving legal effect to electronic signatures and
+
+
+electronic records.  The law would also specifically provide for
+
+
+the admissibility of electronic signatures and records.  The draft
+
+
+proposed statute <A NAME = rfn15></A> <A HREF = "#fn15">15</A>       reads, in pertinent part:<BR>
+
+
+<P>
+
+
+<FONT SIZE=2>Section 1. Definitions. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>As used in this chapter, the following terms shall
+
+
+have the following meanings: <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>&quot;Record&quot; means information that is inscribed
+
+
+on a tangible medium or that is stored in an electronic or other
+
+
+medium and is</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>retrievable in perceivable form. The term &quot;record&quot;
+
+
+includes both electronic records and written records. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>&quot;Signed&quot; or &quot;signature&quot; means
+
+
+any symbol or method executed or adopted by a party with present
+
+
+intention to be bound by or</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>to authenticate a record, including electronic or
+
+
+digital methods.<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>Section 2. Electronic Records. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(a) Where any rule of law requires a writing or provides
+
+
+for certain consequences in the absence of a writing, that rule
+
+
+is</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>satisfied by an electronic record. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(b) In any legal proceeding, nothing in the application
+
+
+of the rules of evidence shall apply so as to deny the admissibility
+
+
+of an</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>electronic record into evidence on the sole ground
+
+
+that it is an electronic record or that it has been retrieved
+
+
+in perceivable</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>form from an electronic or other medium. An electronic
+
+
+duplicate of a record or any perceivable reproduction of a record
+
+
+that</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>accurately reproduces the original is admissible
+
+
+to the same extent as the original record unless or in the circumstances
+
+
+it would</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>be unfair to admit the duplicate in lieu of the original.
+
+
+In assessing the evidentiary weight of an electronic record, the
+
+
+trier of fact</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>may consider any relevant information or circumstances,
+
+
+including the manner in which the record was created, stored,
+
+
+and</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>communicated and the reliability of such processes.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(c) The recipient of a record may establish reasonable
+
+
+requirements with respect to the choice of medium, absent agreement
+
+
+to</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>the contrary. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(d) This section shall not apply when: <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(i) its application would be inconsistent with the
+
+
+manifest intent of the parties, or <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(ii) its application would involve a construction
+
+
+of a rule or law that is clearly inconsistent with the manifest
+
+
+intent of the law</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>making body or repugnant to the context of the same
+
+
+rule or law, provided that the mere requirement that a record
+
+
+be &quot;in</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>writing&quot; or &quot;written&quot; shall not by
+
+
+itself be sufficient to establish such intent. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(iii) [Specific exceptions - under development]<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>Section 3. Electronic Signatures. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(a) Where any rule of law requires a signature, or
+
+
+provides for certain consequences in the absence of a signature,
+
+
+that rule is</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>satisfied by an electronic signature. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(b) In assessing whether an electronic signature
+
+
+was executed or adopted with respect to a record by a particular
+
+
+person, the</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>trier of fact may consider any relevant information
+
+
+or circumstances, including whether the signature is unique to
+
+
+the signer,</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>unauthorized persons had the opportunity to create
+
+
+the signature, the signature is capable of verification, the signature
+
+
+is</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>invalidated if the record is altered, and the reliability
+
+
+of the method used to create, store, and communicate the signature
+
+
+was</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>appropriate for the purposes for which it was created.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(c) Where any rule of law requires a signature to
+
+
+be notarized or acknowledged for filing with any agency, department,
+
+
+board,</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>commission, authority, political subdivision, or
+
+
+other instrumentality of the commonwealth, that rule is satisfied
+
+
+by an electronic</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>signature that meets standards established by the
+
+
+secretary of the commonwealth. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(d) The recipient of a record may establish reasonable
+
+
+requirements with respect to the method used to sign the record.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(e) This section shall not apply when: <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(i) its application would be inconsistent with the
+
+
+manifest intent of the parties, or <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(ii) its application would involve a construction
+
+
+of a rule or law that is clearly inconsistent with the manifest
+
+
+intent of the law</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>making body or repugnant to the context of the same
+
+
+rule or law, provided that the mere requirement of a &quot;signature&quot;
+
+
+or that a</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>record be &quot;signed&quot; shall not by itself
+
+
+be sufficient to establish such intent. <BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(iii) [Specific exceptions - under development]<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+ The United Nations Commission on International Trade Law (UNCITRAL)
+
+
+recently proposed a Model Law on Electronic Commerce.  The UNCITRAL
+
+
+Model Law takes high level, enabling approach to electronic signatures
+
+
+and records, with no mention of digital signatures or cryptography.
+
+
+ The UNCITRAL model law reads, in pertinent part, as follows:
+
+
+<BR>
+
+
+<P>
+
+
+<FONT SIZE=2>Article 6. Writing<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(1) Where the law requires information to be in writing,
+
+
+that requirement is met by a data message if the information contained
+
+
+therein is accessible so as to be usable for subsequent reference.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(2) Paragraph (1) applies whether the requirement
+
+
+therein is in the form of an obligation or whether the law simply
+
+
+provides consequences for the information not being in writing.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(3) The provisions of this article do not apply to
+
+
+the following [...].<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>Article 7. Signature<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(1) Where the law requires a signature of a person,
+
+
+that requirement is met in relation to a data message if:<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(a) a method is used to identify that person and
+
+
+to indicate that person's approval of the information contained
+
+
+in the data message; and<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(b) that method is as reliable as was appropriate
+
+
+for the purpose for which the data message was generated of communicated,
+
+
+in light of all the circumstances, including any relevant agreement.
+
+
+<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(2) Paragraph (1) applies whether the requirement
+
+
+therein is in the form of an obligation or whether the law simply
+
+
+provides consequences in the absence of a signature.<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+<FONT SIZE=2>(3) The provisions of this article do not apply to
+
+
+the following [...].<BR>
+
+
+</FONT>
+
+
+<P>
+
+
+The National Conference of Commissioners for Uniform State Law
+
+
+have been guided by the UNCITRAL approach in drafting efforts
+
+
+to revise Uniform Commercial Code Article 2, covering the sale
+
+
+of goods, and the soon to be proposed Article 2B, covering the
+
+
+license of digital information.  The current legislative draft
+
+
+of electronic signature legislation for the states of Illinois
+
+
+and Oklahoma contain similar language and represent a similar
+
+
+approach.  The Commonwealth of Massachusetts electronic signature
+
+
+law and policy web site, available at &lt;http://www.state.ma.us/itd/legal&gt;,
+
+
+contains the text, or links to, these and other relevant legislative
+
+
+proposals and enactments.  There is an emerging realization that
+
+
+electronic signature statutes should be broad and general, while
+
+
+the policies, regulations (if any) and contracts will be more
+
+
+detailed and flexibly responsive to particular technologies used
+
+
+in particular circumstances.  <BR>
+
+
+<P>
+
+
+ Largely unnoticed, but also very significant, is the new federal
+
+
+Health Insurance Portability Act of 1996.  This law contains provisions
+
+
+that would establish standards and requirements for the electronic
+
+
+transmission of certain health information.  Most notably, the
+
+
+act specifically addresses the role of electronic signatures in
+
+
+health care transactions.  The act provides for the adoption of
+
+
+&quot;standards specifying procedures for the electronic transmission
+
+
+and authentication of signatures&quot; with respect to the broad
+
+
+range of transactions covered by the act.  Of particular relevance,
+
+
+the drafters specifically provided that electronic signatures
+
+
+that comply with the standards promulgated by Health and Human
+
+
+Services shall &quot;be deemed to satisfy Federal and State statutory
+
+
+requirements for written signatures.&quot;  While it remains to
+
+
+be seen whether the Secretary of HHS will deem fit to adopt technology
+
+
+specific or more general regulations, it is clear that legally
+
+
+recognized electronic signatures and records are on the verge
+
+
+of common usage in the American health care - a very significant
+
+
+national economic cluster.<BR>
+
+
+<P>
+
+
+ There are several policy factors favoring a Massachusetts style
+
+
+approach to electronic records and signature legislation.  While
+
+
+the capabilities of a widely used global public key system would
+
+
+be staggering, the technical infrastructure necessary to enable
+
+
+such a system is still years away.  Given the dynamic and unpredictable
+
+
+nature of technological evolution, there is still good reason
+
+
+to refrain from definitive expectations about the shape, scope
+
+
+and type of international information security systems of the
+
+
+future.  Yet, in the meantime, business, health care, education,
+
+
+government and other key economic sectors are moving toward business
+
+
+uses of existing technology, such as e-mail, moving documents
+
+
+and programs (file transfer protocol), and basic web browsing
+
+
+(hyper text transfer protocol).  Other security systems are providing
+
+
+some or all of the essential elements of network communications
+
+
+security, from elaborate biometric devices (for finger prints
+
+
+or retina scans) to simple software security requiring a password
+
+
+or other PIN.  The law, and attorneys in particular, must take
+
+
+account of this reality so as not to deny the legal effect of
+
+
+legitimate transactions that happen to occur electronically and
+
+
+to lend needed stability and predictability for these activities.
+
+
+ As technology changes and the market emerges, more detailed state
+
+
+law will always be an option for individual or uniform statutes.
+
+
+ The use of public key cryptography and certification authorities
+
+
+would more than qualify for legal recognition under the Massachusetts
+
+
+approach.  The Massachusetts approach is consistent with the recent
+
+
+UNCITRAL Model Law and would provide a relatively simple legal
+
+
+expression for all fifty states and the federal government to
+
+
+adopt, thus providing a needed base-line for electronic commerce.
+
+
+<BR>
+
+
+<BR>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+<U><B><FONT SIZE=4><A NAME="Conclusion">Conclusion</A></FONT></B></U>  <BR>
+
+
+<BR>
+
+
+<P>
+
+
+ The legal profession, and society in general, stands at the cusp
+
+
+of a profound change - a revolutionary shift to the digital age.
+
+
+ A number of voices have sounded the alarm to beware of the &quot;wild
+
+
+west&quot; of cyberspace.  Some advocate enactment of an array
+
+
+of protective comprehensive statutes, tailored to meet the special
+
+
+host of issues presented by the new information technologies.
+
+
+ It is doubtful that any particular suite of laws would be sufficient,
+
+
+or desirable, as a legal response to the information age.  It
+
+
+may be more accurate to say that nearly all fields of law will
+
+
+undergo a transition that reflects and shapes the underlying movement
+
+
+toward electronically based information and communication.  When
+
+
+our civilization transition to the industrial age, our legal system
+
+
+did not adapt by the mere addition of a new area of &quot;industrial
+
+
+law.&quot;  Rather, nearly every area of law was transformed by,
+
+
+and helped to create, the new economic, social and political realities
+
+
+associated with the industrial revolution and our subsequent industrial
+
+
+civilization.  Similarly, the pervasive information revolution
+
+
+will relegate many currently familiar concepts to irrelevant historical
+
+
+curiosities.  The meaning of a signature will certainly be among
+
+
+the definitions to evolve.  Yet, the law has proven to be resilient
+
+
+and capable of undergoing dynamic reshaping over the centuries.
+
+
+ Our principles of due process, open society, economic freedom
+
+
+and self-government remain ageless beacons.  We would be better
+
+
+served by more calls to constructive action, rather than the frequent
+
+
+vague alarms sounded about the coming digital revolution.  The
+
+
+change is coming - indeed it is already upon us - and the bar
+
+
+must rise to the challenge as a stabilizing and proactive force
+
+
+during the exciting transition period ahead.
+
+
+<p>
+
+
+<P>
+
+
+<A HREF="#ELECTRONIC SIGNATURES AND RECORDS"><I><CENTER>Back to the Top of the Document</CENTER></I></A>
+
+
+<p>
+
+
+<hr>
+
+
+Footnotes:<p>
+
+
+
+ 
+
+<P>
+
+<FONT SIZE=2><A HREF = "#rfn1">1 <A NAME = fn1></A></A> For official information relating to electronic commerce
+
+and online government law and policy initiatives, see <A HREF="http://www.state.ma.us/itd/legal">http://www.state.ma.us/itd/legal</A>,
+
+the web site of the Commonwealth of Massachusetts, Information
+
+Technology Division, Office of the General Counsel.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn2">2 <A NAME = fn2></A></A> The cites listed in this article are put forward
+
+as non-technical, informal, educational background. The author
+
+would be pleased to provide more specific cites to materials referenced
+
+but not cited or incompletely cited in the text and footnotes.
+
+Please forward such inquiries to &lt;citations@civics.com&gt;.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn3">3 <A NAME = fn3></A></A> For a very good, though brief, summary of the issues
+
+raised by use of secure information technology in health care,
+
+see appendix #2. This is an excerpt from the 1995 report: &quot;Cryptography's
+
+Role in Securing the Information Society&quot; by the National
+
+Research Council. More information about the report is available
+
+at: &lt;http://www.tiac.net/biz/bcslegal/nrc1.htm&gt;.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn4">4 <A NAME = fn4></A></A> White House Domestic Policy Council, 1993</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn5">5 <A NAME = fn5></A></A>Lawrence O. Gostin, <I>Privacy and Security of Health
+
+Information in the Emerging Health Care System,</I> Health Matrix:
+
+5 Journal of Law-Medicine 1, Winter 1995, at 1 (noting that &quot;establishing
+
+appropriate security standards can, within the proper legislative
+
+framework, both strengthen patient privacy and confidentiality
+
+and assure that information is available to improve the quality
+
+and efficiency of health care services&quot;). Also see: Bill
+
+Minor, <I>The Impact of Information Technology on Medical Records
+
+Privacy,</I> Medical Trial Technique Quarterly, September, 1996
+
+at 98. (noting &quot;Although the availability of linkages between
+
+databases of health information pose risks to privacy the benefits
+
+are seen to be substantial in terms of enhancing the quality and
+
+efficiency of care&quot;) </FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn6">6 <A NAME = fn6></A></A> Paul M. Schwartz, <I>Protection of Privacy in Health
+
+Care Reform,</I> 48 Vanderbilt Law Review 2, March 1995 at 305
+
+(citing the Working Group for Electronic Data Interchange, a voluntary
+
+task force comprised of members from the private and public sectors.
+
+In 1993, the group estimated switching to EDI in health care would
+
+yield a whopping forty-two billion in savings by the end of the
+
+century).</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn7">7 <A NAME = fn7></A></A> Lawrence Gostin, <I>Health Information Privacy,</I>
+
+80 Cornell Law Review 3, March 1995, at 457.</FONT>
+
+<P>
+
+<U><FONT SIZE=2>	<A HREF = "#rfn8">8 <A NAME = fn8></A></A> Id</U>.</FONT>
+
+<P>
+
+<U><FONT SIZE=2>	<A HREF = "#rfn9">9 <A NAME = fn9></A></A>Supra</FONT></U><FONT SIZE=2> note 4 at 305-306.
+
+Also see <U>Id</U> at 476 - 484.</FONT>
+
+<P>
+
+<U><FONT SIZE=2>	<A HREF = "#rfn10">10 <A NAME = fn10></A></A> Supra</FONT></U><FONT SIZE=2> note 5 at 457 and
+
+<U>supra</U> note 4 at 305.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn11">11 <A NAME = fn11></A></A>It is possible that distinct function of investigating
+
+and attesting to the identity of the subscriber will develop into
+
+a separate responsibility, or perhaps a line of business. This
+
+function, carried out by so-called &quot;registration authorities&quot;
+
+may be isolated from the technical delivery and maintenance of
+
+certificates performed by certification authorities. Today, the
+
+uncertain liabilities associated with the registration authority
+
+function has prompted some C/As to isolate that function from
+
+their business duties. This can be done, among other ways, by
+
+issuing certificates based on a pre-approved list submitted by
+
+a merchant, or by subcontracting the function out.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn12">12 <A NAME = fn12></A></A> See the<B> Massachusetts Electronic Signature and
+
+Records Act</B>, Draft 12/19/96, available at &lt;www.state.ma.us/itd/legal/mersa.htm&gt;
+
+and the <B>Illinois Electronic Writing and Signature Act</B>,
+
+Draft: 12/2/96, available at &lt;www.magnet.state.ma.us/itd/legal/106192.htm&gt;.</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn13">13 <A NAME = fn13></A></A> 947 F2d 1409 (9th Cir. 1991).</FONT>
+
+<P>
+
+<FONT SIZE=2>	<A HREF = "#rfn14">14 <A NAME = fn14></A></A> Supreme Court of Missouri, En Banc, Nos. 72494, 73339.
+
+July 23, 1991.</FONT>
+
+<P>
+
+<U><FONT SIZE=2>	<A HREF = "#rfn15">15 <A NAME = fn15></A></A> Supra</FONT></U><FONT SIZE=2> note 10.</FONT>
+
+<P>
+
+
+
+
+
+<hr>
+
+
+<CENTER>Copyright 1997, Daniel Greenwood.  All rights reserved.  Request permission to reprint from: <A HREF="mailto:permissions@civics.com">permissions@civics.com</A>.<br>
+
+
+<A HREF="index.htm">Back to the Home Page</A></CENTER>
+<p align=center <br> <br><!-- The following line is the ITD footer file -->
+
+<br><br>
+<A href="mailto:Sandy.kruczkowski@itd.state.ma.us">
+<IMG alt="E-mail us" border="0" hspace="6" src="/itd/images/email_anim2.gif"></A>          
+
+Your <A href="mailto:Sandy.kruczkowski@itd.state.ma.us">comments, suggestions and corrections</A>
+	for this website are welcome.&nbsp;<br>
+            <P></P> 
+
+
+<p align="center" ><font size="-1">One Ashburton Place - Rm. 1601, Boston, MA 02108</font><br>
+<font size="-1">Phone:(617)626-4500 &nbsp;  Fax:(617)626-4516</font></p>
+<br>
+<p align="center"><a href="/itd/webpolicy.htm">Privacy Statement</a></p>
+</p>
+</BODY>
+
+
+
+<SCRIPT language="Javascript">
+<!--
+
+// FILE ARCHIVED ON 20020105122559 AND RETRIEVED FROM THE
+// INTERNET ARCHIVE ON 20080720070524.
+// JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+// ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+// SECTION 108(a)(3)).
+
+   var sWayBackCGI = "http://web.archive.org/web/20020105122559/";
+
+   function xResolveUrl(url) {
+      var image = new Image();
+      image.src = url;
+      return image.src;
+   }
+   function xLateUrl(aCollection, sProp) {
+      var i = 0;
+      for(i = 0; i < aCollection.length; i++) {
+         if (typeof(aCollection[i][sProp]) == "string") { 
+          if (aCollection[i][sProp].indexOf("mailto:") == -1 &&
+             aCollection[i][sProp].indexOf("javascript:") == -1) {
+            if(aCollection[i][sProp].indexOf("http") == 0) {
+                aCollection[i][sProp] = sWayBackCGI + aCollection[i][sProp];
+            } else {
+                aCollection[i][sProp] = sWayBackCGI + xResolveUrl(aCollection[i][sProp]);
+            }
+         }
+         }
+      }
+   }
+
+   xLateUrl(document.getElementsByTagName("IMG"),"src");
+   xLateUrl(document.getElementsByTagName("A"),"href");
+   xLateUrl(document.getElementsByTagName("AREA"),"href");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"codebase");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"data");
+   xLateUrl(document.getElementsByTagName("APPLET"),"codebase");
+   xLateUrl(document.getElementsByTagName("APPLET"),"archive");
+   xLateUrl(document.getElementsByTagName("EMBED"),"src");
+   xLateUrl(document.getElementsByTagName("BODY"),"background");
+   var forms = document.getElementsByTagName("FORM");
+   if (forms) {
+       var j = 0;
+       for (j = 0; j < forms.length; j++) {
+              f = forms[j];
+              if (typeof(f.action)  == "string") {
+                 if(typeof(f.method)  == "string") {
+                     if(typeof(f.method) != "post") {
+                        f.action = sWayBackCGI + f.action;
+                     }
+                  }
+              }
+        }
+    }
+
+
+//-->
+</SCRIPT>
+
+</HTML>
+
+

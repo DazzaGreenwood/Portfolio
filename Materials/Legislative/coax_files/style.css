@@ -1,0 +1,178 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+
+a:link, a:visited, a:active, a.boldlink:link, a.boldlink:visited, a.boldlink:active, a.text2:link, a.text2:visited, a.text2:active {
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+a:link {
+    color: #0000CC;
+}
+a:visited {
+	color: #663300;
+}
+a:active {
+	color: #967393;
+}
+
+
+a.leftnav:link, a.leftnav:visited, a.leftnav:active, a.subnav:link, a.subnav:visited, a.subnav:active, a.rightnav:link, a.rightnav:visited, a.rightnav:active, a.footer:link, a.footer:visited, a.footer:active {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+}
+a.leftnav:link {
+    color: #FFFFFF;
+}
+a.leftnav:visited {
+    color: #FFFFFF;
+}
+a.leftnav:active {
+    color: #FFCC35;
+}
+a.leftnav:hover {
+    color: #FFCC35;
+}
+
+
+a.subnav:link {
+	color: #FFE692;
+}
+a.subnav:visited {
+	color: #FFE692;
+}
+a.subnav:active {
+	color: #FFCC35;
+}
+a.subnav:hover {
+	color:#FFCC35
+}
+
+
+a.rightnav:link, a.rightnav:visited, a.rightnav:active, a.footer:link, a.footer:visited, a.footer:active, a.boldlink:link, a.boldlink:visited, a.boldlink:active, .boldtext {
+    font-weight: bold;
+}
+
+a.leftnav:link, a.leftnav:visited, a.leftnav:active, a.subnav:link, a.subnav:visited, a.subnav:active, a.rightnav:link, a.rightnav:visited, a.rightnav:active, a.footer:link, a.footer:visited, a.footer:active, a.text2:link, a.text2:visited, a.text2:active {
+    text-decoration: none;
+}
+
+a.rightnav:link {
+	color: #3C1A57;
+}
+a.rightnav:visited {
+	color: #3C1A57;
+}
+a.rightnav:active {
+	color: #FFCC35;
+}
+a.rightnav:hover {
+	color:#FFCC35
+}
+
+}
+a.footer:link {
+	color: #3C1A57;
+}
+a.footer:visited {
+	color: #3C1A57;
+}
+a.footer:active {
+	color: #FFCC35;
+}
+
+
+
+a.boldlink:link {
+	color: #000000;
+}
+a.boldlink:visited {
+	color: #663300;
+}
+a.boldlink:active {
+	color: #B59BB3;
+}
+
+a.text2:link {
+	color: #000000;
+}
+a.text2:visited {
+	color: #3C1A57;
+}
+a.text2:active {
+	color: #666666;
+}
+a.text2:hover {
+	color:#666666
+}
+
+
+.text, p, ul, li, ol, dl, dt, dd, .boldtext {
+	color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+
+.introtext {
+	color: #000000; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 12pt;
+}
+
+
+a.introtext:link {
+	color: #0000CC; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 12pt;
+}
+
+a.introtext:visited {
+	color: #663300; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 12pt;
+}
+
+a.introtext:active{
+	color: #967393; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 12pt;
+}
+
+
+.boldsubtext {
+	color: #73476A; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE:  10pt; FONT-WEIGHT: bold
+}
+
+.littletext {
+	color: #000000; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 8pt;
+}
+
+.password_text {
+	color: #000000; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-SIZE: 8pt; FONT-WEIGHT: bold;
+}
+
+
+.headingtext {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFCC35}
+.courier {  font-family: "Courier New", Courier, mono; font-size: 10pt}
+.navhead {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #FFFFFF}
+.whiteheader { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF}
+
+p.c1 {
+    font-weight: bold;
+  }
+p.right {
+    text-align: right;
+    margin-right: 15px;
+  }
+.lower-alpha li {
+    list-style: lower-alpha;
+    margin-bottom: 2em;
+  }
+.lower-roman li {
+    list-style: lower-roman;
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+.decimal li {
+    list-style-type: decimal;
+  }
+
+img.headshot {
+  float: left;
+  padding-right: .5em;
+}

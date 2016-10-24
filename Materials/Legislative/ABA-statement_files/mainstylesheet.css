@@ -1,0 +1,138 @@
+<style type="text/css">
+	<!--
+	.copy, .sidebarlinks, .subtitle, .levelone, .leveltwo, .levelthree, .levelfour, .levelfive, .levelsix, .legresourceheader, .legresourcesubheader, .aboutheader, .aboutsubheader, .storeheader, .storesubheader, .pubresourceheader, .pubresourcesubheader, .poladvheader, .poladvsubheader, .membersheader, .memberssubheader, .intnatheader, .intnatsubheader, .entityheader, .entitysubheader {font-family: arial, helvetica, sans-serif; font-size:10pt;}
+
+	.date, .location{font-family: arial, helvetica, sans-serif; font-size:8pt;}
+
+	body,table,td,tr,li,ul,ol{font-family: arial, helvetica, sans-serif; font-size:10pt;}
+	.levelone{font-size:8pt; }
+	.levelthree{font-size:12pt;}
+	.levelfour{font-size:14pt; }
+	.levelfive{font-size:18pt; }
+	.levelsix{font-size:24pt; }
+	
+	.header{font-size: 18pt; font-weight: bold; color: #000000;}
+	.subheader{font-size: 14pt; font-weight: bold; color: #000000;}
+	
+
+	.date{font-size:9pt;}
+	.location{font-size:8pt;}
+	.sidebarlinks{font-size: 9pt; text-decoration: none;font-weight:bold; }
+	.subtitle{font-weight:normal; font-size: 8pt;}
+	
+  .topnavlinks { font-family:Arial; text-decoration: none; font-weight:bold; font-size: 10pt; color=#FFFF00;}
+	.topnavlinks:hover { background-color: #333399; }
+	
+	
+	.aboutheader{font-size: 18pt; font-weight:bold;color: #cc3300;}
+	.aboutsubheader{font-size: 14pt; color: #cc3300;}
+	.aboutcopy{color: #000000;}
+	
+		.bioethicsheader{font-size: 16pt; font-weight:bold;color: #000066;}
+	.bioethicssubheader{font-size: 14pt; color: #000066;}
+	.bioethicscopy{color: #000000;}	
+
+	.ccheader{font-size: 18pt; font-weight:bold; color: #CC9900;}
+	.ccsubheadercolor{font-size: 14pt; font-weight:bold; color: #CC9900;}
+	.ccsubheader{font-size: 14pt; font-weight:bold; color: #999999;}
+	.cccopy{color: #000000;}
+
+	.entityheader{font-size: 18pt; font-weight:bold;color: #003366;}
+	.entitysubheader{font-size: 14pt; color: #003366; font-weight:bold;}
+	.entitycopy{color: #000000;}
+	a.entitycontent {text-decoration:none}
+
+	.eventsheader{font-size: 18pt; font-weight:bold;color: #336666;}
+	.eventssubheader{font-size: 14pt; color: #336666; font-weight:bold;}
+	.eventscopy{color: #000000;}
+
+        .generalheader{font-size: 18pt; font-weight:bold;color: #343399;}
+	.generalsubheader{font-size: 14pt; color: #343399; font-weight:bold;}
+	.generalcopy{color: #000000;}
+
+	.intnatheader{font-size: 18pt; font-weight:bold;color: #660000; font-weight:bold;}
+	.intnatsubheader{font-size: 14pt; color: #660000;}
+	.intnatcopy{color: #000000;}
+
+	.isuheader{font-size: 18pt; font-weight:bold;color: #8e1e90; font-weight:bold;}
+	.isusubheader{font-size: 14pt; font-weight:bold; color: #8e1e90;}
+	.isucopy{color: #000000;}
+
+	.journalheader{font-size: 18pt; font-weight:bold;color: #000066;}
+	.journalsubheader{font-size: 14pt; color: #000066;}
+	.journalcopy{color: #000000;}
+	
+	.leadershipheader{font-size: 18pt; font-weight:bold; color: #000066;}
+	.leadershipsubheader{font-size: 14pt; font-weight:bold; color: #000066;}
+	.leadershipcopy{color: #000000;}
+
+	.legresourceheader{font-size: 18pt; font-weight: bold; color: #663366;}
+	.legresourcesubheader{font-size: 14pt; color: #663366;}
+	.legresourcecopy{color: #000000;}
+
+	.membersheader{font-size: 18pt; font-weight:bold; color: #CC9900;}
+	.memberssubheadercolor{font-size: 14pt; font-weight:bold; color: #CC9900;}
+	.memberssubheader{font-size: 14pt; font-weight:bold; color: #999999;}
+	.memberscopy{color: #000000;}
+
+	.poladvheader{font-size: 18pt; font-weight:bold; color: #990000;}
+	.poladvsubheader{font-size: 14pt; font-weight:bold; color: #990000;}
+	.poladvcopy{color: #000000;}
+
+	.pubresourceheader{font-size: 18pt; font-weight:bold;color: #990033;}
+	.pubresourcesubheader{font-size: 14pt; color: #990033;}
+	.pubresourcecopy{color: #000000;}
+
+	.storeheader{font-size: 18pt; font-weight:bold;color: #996600;}
+	.storesubheader{font-size: 14pt; color: #996600;}
+	.storecopy{color: #000000;}
+
+	.studentheader{font-size: 18pt; font-weight: bold; color: #663366;}
+	.studentsubheader{font-size: 14pt; font-weight: bold; color: #663366;}
+	.studentcopy{color: #000000;}
+	
+		.srlheader{	font-size: 18pt; font-weight: bold;	color: #000000; font-family: "Arial, Helvetica, sans-serif";}
+        .srlheaderred{	font-size: 18pt; font-weight: bold;	color: #990033; font-family: "Arial, Helvetica, sans-serif";} 
+	.srlsubheader{font-size: 14pt; font-weight: bold; color: #000000; font-family: "Arial, Helvetica, sans-serif";}
+	.srlsubheaderred{font-size: 14pt; font-weight: bold; color: #990033; font-family: "Arial, Helvetica, sans-serif";}
+	.srlsmallheader{font-size: 12pt; font-weight: bold; color: #000000; font-family: "Arial, Helvetica, sans-serif";}
+	.srlsmallheaderred{font-size: 12pt; font-weight: bold; color: #990033; font-family: "Arial, Helvetica, sans-serif";}
+	.srlcopy{font-size: 11pt; color: #000000; font-family: "Arial, Helvetica, sans-serif";}
+	.srlcopyred{font-size: 11pt; color: #990033; font-family: "Arial, Helvetica, sans-serif";}
+	
+	.taxheader{font-size: 18pt; font-weight:bold;color: #000066;}
+	.taxsubheader{font-size: 14pt; color: #000066;}
+	.taxcopy{color: #000000;}
+
+	a.abanav{text-decoration:	none;	color: #000099;}
+	 .abanavfxnbox{background-color:	#000099; color: #CCCCCC; font-size:	10pt;}
+	 .abanavsearchbox{color: #000099; font-size: 10pt; }
+	input.abanavfnxtn {font: arial, helvetica; font-size:10pt; color:	black;}
+	select.abanavfnxtn {font: arial, helvetica; font-size:10pt; color: #000099; font-weight:  normal;}
+	 .abanavnavtab	{background-color:	#FFFFFF; color:	#000099; font-size:	8pt; font-weight:	bold;}
+	 .abanavhanglink {	font-family: arial, helvetica; font-size : 7pt;	color: #000099;	background-color: #CCCCCC; border: 1px solid navy; margin : 3px; text-decoration: none;}
+
+ 	 .gatewayh1 {background-color: #CCCCFF; font-size: 14pt; font-family: Arial; border-bottom: 1px solid;}
+	.jsdisabled {color: red; font-weight:bold}
+	-->
+</style>
+
+/***** ABA History Styles ****/
+dl {}
+
+dt {font-weight: bold;
+	}
+
+dd {margin-left: 0;
+	margin-bottom: 10px;}
+	
+
+#docnav {width: 200px;
+	float: right;
+	margin-left: 5px;
+	padding: 5px;
+	border: 1px solid #999;
+	}
+#docnav ul {margin-left: 15px; }	
+#docnav h2 {font-size: 14px; text-decoration: underline; }
+.top {text-align:right; font-size: 10px; }
